@@ -1,0 +1,21 @@
+{
+  "company": "NovaTech Systems",
+  "num_clean_docs": 52,
+  "num_single_hop_queries": 181,
+  "num_multi_hop_queries": 20,
+  "num_poisoned_docs": 72,
+  "attack_types": [
+    "instruction_injection",
+    "retrieval_targeted",
+    "content_manipulation"
+  ],
+  "doc_categories": [
+    "service_doc",
+    "api_doc",
+    "deployment_doc",
+    "monitoring_doc",
+    "policy_doc",
+    "runbook_doc"
+  ],
+  "notes": "Synthetic internal tech-company dataset designed for RAG poisoning and defense experiments."
+}

@@ -1,0 +1,847 @@
+[
+  {
+    "doc_id": "DOC_001",
+    "title": "HeliosAuth Service Overview",
+    "category": "service_doc",
+    "team": "Infra",
+    "content": "Title: HeliosAuth Service Overview\n\nThe HeliosAuth service is maintained by the Infra team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 7418\n- Authentication Key: CMD-5594\n- Token Expiry: 15 minutes\n- Primary Region: eu-west-2\n\nThe service depends on HarborWorker and AtlasWorker for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "HeliosAuth",
+      "team": "Infra",
+      "port": "7418",
+      "auth_key": "CMD-5594",
+      "token_expiry": "15 minutes",
+      "region": "eu-west-2",
+      "dependency_1": "HarborWorker",
+      "dependency_2": "AtlasWorker"
+    }
+  },
+  {
+    "doc_id": "DOC_002",
+    "title": "LumenWorker Service Overview",
+    "category": "service_doc",
+    "team": "Messaging",
+    "content": "Title: LumenWorker Service Overview\n\nThe LumenWorker service is maintained by the Messaging team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 7322\n- Authentication Key: RJU-9593\n- Token Expiry: 15 minutes\n- Primary Region: us-central-1\n\nThe service depends on VectorAuth and AtlasWorker for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "LumenWorker",
+      "team": "Messaging",
+      "port": "7322",
+      "auth_key": "RJU-9593",
+      "token_expiry": "15 minutes",
+      "region": "us-central-1",
+      "dependency_1": "VectorAuth",
+      "dependency_2": "AtlasWorker"
+    }
+  },
+  {
+    "doc_id": "DOC_003",
+    "title": "VectorGateway Service Overview",
+    "category": "service_doc",
+    "team": "Compliance",
+    "content": "Title: VectorGateway Service Overview\n\nThe VectorGateway service is maintained by the Compliance team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8185\n- Authentication Key: CHD-6475\n- Token Expiry: 30 minutes\n- Primary Region: eu-west-1\n\nThe service depends on OrionAuth and HarborWorker for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "VectorGateway",
+      "team": "Compliance",
+      "port": "8185",
+      "auth_key": "CHD-6475",
+      "token_expiry": "30 minutes",
+      "region": "eu-west-1",
+      "dependency_1": "OrionAuth",
+      "dependency_2": "HarborWorker"
+    }
+  },
+  {
+    "doc_id": "DOC_004",
+    "title": "HeliosTokenService Service Overview",
+    "category": "service_doc",
+    "team": "HR",
+    "content": "Title: HeliosTokenService Service Overview\n\nThe HeliosTokenService service is maintained by the HR team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8093\n- Authentication Key: WVU-1928\n- Token Expiry: 30 minutes\n- Primary Region: us-east-2\n\nThe service depends on OrionAuth and SummitLedger for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "HeliosTokenService",
+      "team": "HR",
+      "port": "8093",
+      "auth_key": "WVU-1928",
+      "token_expiry": "30 minutes",
+      "region": "us-east-2",
+      "dependency_1": "OrionAuth",
+      "dependency_2": "SummitLedger"
+    }
+  },
+  {
+    "doc_id": "DOC_005",
+    "title": "SummitRouter Service Overview",
+    "category": "service_doc",
+    "team": "Data",
+    "content": "Title: SummitRouter Service Overview\n\nThe SummitRouter service is maintained by the Data team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 9621\n- Authentication Key: WRH-5030\n- Token Expiry: 45 minutes\n- Primary Region: eu-west-2\n\nThe service depends on SignalCache and HeliosTokenService for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "SummitRouter",
+      "team": "Data",
+      "port": "9621",
+      "auth_key": "WRH-5030",
+      "token_expiry": "45 minutes",
+      "region": "eu-west-2",
+      "dependency_1": "SignalCache",
+      "dependency_2": "HeliosTokenService"
+    }
+  },
+  {
+    "doc_id": "DOC_006",
+    "title": "OrionAuth Service Overview",
+    "category": "service_doc",
+    "team": "Monitoring",
+    "content": "Title: OrionAuth Service Overview\n\nThe OrionAuth service is maintained by the Monitoring team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 9323\n- Authentication Key: WKG-7672\n- Token Expiry: 45 minutes\n- Primary Region: us-east-2\n\nThe service depends on VectorAuth and HeliosTokenService for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "OrionAuth",
+      "team": "Monitoring",
+      "port": "9323",
+      "auth_key": "WKG-7672",
+      "token_expiry": "45 minutes",
+      "region": "us-east-2",
+      "dependency_1": "VectorAuth",
+      "dependency_2": "HeliosTokenService"
+    }
+  },
+  {
+    "doc_id": "DOC_007",
+    "title": "AtlasWorker Service Overview",
+    "category": "service_doc",
+    "team": "Infra",
+    "content": "Title: AtlasWorker Service Overview\n\nThe AtlasWorker service is maintained by the Infra team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 9207\n- Authentication Key: IXS-6965\n- Token Expiry: 30 minutes\n- Primary Region: us-east-2\n\nThe service depends on LumenGateway and HarborRouter for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "AtlasWorker",
+      "team": "Infra",
+      "port": "9207",
+      "auth_key": "IXS-6965",
+      "token_expiry": "30 minutes",
+      "region": "us-east-2",
+      "dependency_1": "LumenGateway",
+      "dependency_2": "HarborRouter"
+    }
+  },
+  {
+    "doc_id": "DOC_008",
+    "title": "VectorAuth Service Overview",
+    "category": "service_doc",
+    "team": "Messaging",
+    "content": "Title: VectorAuth Service Overview\n\nThe VectorAuth service is maintained by the Messaging team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 7192\n- Authentication Key: DEU-2691\n- Token Expiry: 60 minutes\n- Primary Region: eu-west-2\n\nThe service depends on LumenWorker and VectorSync for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "VectorAuth",
+      "team": "Messaging",
+      "port": "7192",
+      "auth_key": "DEU-2691",
+      "token_expiry": "60 minutes",
+      "region": "eu-west-2",
+      "dependency_1": "LumenWorker",
+      "dependency_2": "VectorSync"
+    }
+  },
+  {
+    "doc_id": "DOC_009",
+    "title": "HarborWorker Service Overview",
+    "category": "service_doc",
+    "team": "Storage",
+    "content": "Title: HarborWorker Service Overview\n\nThe HarborWorker service is maintained by the Storage team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8029\n- Authentication Key: RAV-1845\n- Token Expiry: 15 minutes\n- Primary Region: eu-west-1\n\nThe service depends on SignalCache and LumenWorker for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "HarborWorker",
+      "team": "Storage",
+      "port": "8029",
+      "auth_key": "RAV-1845",
+      "token_expiry": "15 minutes",
+      "region": "eu-west-1",
+      "dependency_1": "SignalCache",
+      "dependency_2": "LumenWorker"
+    }
+  },
+  {
+    "doc_id": "DOC_010",
+    "title": "HarborRouter Service Overview",
+    "category": "service_doc",
+    "team": "Security",
+    "content": "Title: HarborRouter Service Overview\n\nThe HarborRouter service is maintained by the Security team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 7013\n- Authentication Key: XXI-8281\n- Token Expiry: 45 minutes\n- Primary Region: ap-south-1\n\nThe service depends on VectorSync and SignalCache for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "HarborRouter",
+      "team": "Security",
+      "port": "7013",
+      "auth_key": "XXI-8281",
+      "token_expiry": "45 minutes",
+      "region": "ap-south-1",
+      "dependency_1": "VectorSync",
+      "dependency_2": "SignalCache"
+    }
+  },
+  {
+    "doc_id": "DOC_011",
+    "title": "VectorSync Service Overview",
+    "category": "service_doc",
+    "team": "Storage",
+    "content": "Title: VectorSync Service Overview\n\nThe VectorSync service is maintained by the Storage team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8531\n- Authentication Key: YFR-8095\n- Token Expiry: 60 minutes\n- Primary Region: us-central-1\n\nThe service depends on HeliosTokenService and OrionAuth for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "VectorSync",
+      "team": "Storage",
+      "port": "8531",
+      "auth_key": "YFR-8095",
+      "token_expiry": "60 minutes",
+      "region": "us-central-1",
+      "dependency_1": "HeliosTokenService",
+      "dependency_2": "OrionAuth"
+    }
+  },
+  {
+    "doc_id": "DOC_012",
+    "title": "SummitLedger Service Overview",
+    "category": "service_doc",
+    "team": "Payments",
+    "content": "Title: SummitLedger Service Overview\n\nThe SummitLedger service is maintained by the Payments team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8259\n- Authentication Key: HBH-9117\n- Token Expiry: 15 minutes\n- Primary Region: ap-south-1\n\nThe service depends on SummitRouter and HarborWorker for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "SummitLedger",
+      "team": "Payments",
+      "port": "8259",
+      "auth_key": "HBH-9117",
+      "token_expiry": "15 minutes",
+      "region": "ap-south-1",
+      "dependency_1": "SummitRouter",
+      "dependency_2": "HarborWorker"
+    }
+  },
+  {
+    "doc_id": "DOC_013",
+    "title": "ZephyrGateway Service Overview",
+    "category": "service_doc",
+    "team": "Analytics",
+    "content": "Title: ZephyrGateway Service Overview\n\nThe ZephyrGateway service is maintained by the Analytics team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8946\n- Authentication Key: RFI-8963\n- Token Expiry: 30 minutes\n- Primary Region: eu-west-1\n\nThe service depends on VectorSync and VectorGateway for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "ZephyrGateway",
+      "team": "Analytics",
+      "port": "8946",
+      "auth_key": "RFI-8963",
+      "token_expiry": "30 minutes",
+      "region": "eu-west-1",
+      "dependency_1": "VectorSync",
+      "dependency_2": "VectorGateway"
+    }
+  },
+  {
+    "doc_id": "DOC_014",
+    "title": "SignalCache Service Overview",
+    "category": "service_doc",
+    "team": "Security",
+    "content": "Title: SignalCache Service Overview\n\nThe SignalCache service is maintained by the Security team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 8529\n- Authentication Key: OQO-1331\n- Token Expiry: 45 minutes\n- Primary Region: us-central-1\n\nThe service depends on SummitLedger and ZephyrGateway for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "SignalCache",
+      "team": "Security",
+      "port": "8529",
+      "auth_key": "OQO-1331",
+      "token_expiry": "45 minutes",
+      "region": "us-central-1",
+      "dependency_1": "SummitLedger",
+      "dependency_2": "ZephyrGateway"
+    }
+  },
+  {
+    "doc_id": "DOC_015",
+    "title": "LumenGateway Service Overview",
+    "category": "service_doc",
+    "team": "Storage",
+    "content": "Title: LumenGateway Service Overview\n\nThe LumenGateway service is maintained by the Storage team at NovaTech Systems. It handles a core production workflow and is documented in the internal service catalog.\n\n- Default Port: 9410\n- Authentication Key: HAC-0310\n- Token Expiry: 45 minutes\n- Primary Region: us-central-1\n\nThe service depends on LumenWorker and OrionAuth for upstream validation and request routing. Engineers should use the documented port and key values when configuring internal integrations.",
+    "facts": {
+      "service_name": "LumenGateway",
+      "team": "Storage",
+      "port": "9410",
+      "auth_key": "HAC-0310",
+      "token_expiry": "45 minutes",
+      "region": "us-central-1",
+      "dependency_1": "LumenWorker",
+      "dependency_2": "OrionAuth"
+    }
+  },
+  {
+    "doc_id": "DOC_016",
+    "title": "EmberProxy API Reference",
+    "category": "api_doc",
+    "team": "Monitoring",
+    "content": "Title: EmberProxy API Reference\n\nThe EmberProxy API is owned by the Monitoring team and is used for internal service-to-service requests.\n\n- Endpoint: /emberproxy/v1/fetch\n- Method: DELETE\n- Rate Limit: 120 requests per minute\n- API Key Prefix: RE-9973\n- Timeout: 8 seconds\n\nAll requests must include the X-Service-Key header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "EmberProxy",
+      "team": "Monitoring",
+      "endpoint": "/emberproxy/v1/fetch",
+      "method": "DELETE",
+      "rate_limit": "120 requests per minute",
+      "key_prefix": "RE-9973",
+      "timeout": "8 seconds",
+      "required_header": "X-Service-Key"
+    }
+  },
+  {
+    "doc_id": "DOC_017",
+    "title": "AuroraAPI API Reference",
+    "category": "api_doc",
+    "team": "Payments",
+    "content": "Title: AuroraAPI API Reference\n\nThe AuroraAPI API is owned by the Payments team and is used for internal service-to-service requests.\n\n- Endpoint: /aurora/v1/fetch\n- Method: DELETE\n- Rate Limit: 250 requests per minute\n- API Key Prefix: NN-7010\n- Timeout: 8 seconds\n\nAll requests must include the X-Trace-ID header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "AuroraAPI",
+      "team": "Payments",
+      "endpoint": "/aurora/v1/fetch",
+      "method": "DELETE",
+      "rate_limit": "250 requests per minute",
+      "key_prefix": "NN-7010",
+      "timeout": "8 seconds",
+      "required_header": "X-Trace-ID"
+    }
+  },
+  {
+    "doc_id": "DOC_018",
+    "title": "HeliosProxy API Reference",
+    "category": "api_doc",
+    "team": "Infra",
+    "content": "Title: HeliosProxy API Reference\n\nThe HeliosProxy API is owned by the Infra team and is used for internal service-to-service requests.\n\n- Endpoint: /heliosproxy/v1/fetch\n- Method: POST\n- Rate Limit: 500 requests per minute\n- API Key Prefix: EN-2473\n- Timeout: 2 seconds\n\nAll requests must include the X-Service-Key header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "HeliosProxy",
+      "team": "Infra",
+      "endpoint": "/heliosproxy/v1/fetch",
+      "method": "POST",
+      "rate_limit": "500 requests per minute",
+      "key_prefix": "EN-2473",
+      "timeout": "2 seconds",
+      "required_header": "X-Service-Key"
+    }
+  },
+  {
+    "doc_id": "DOC_019",
+    "title": "HarborAPI API Reference",
+    "category": "api_doc",
+    "team": "Auth",
+    "content": "Title: HarborAPI API Reference\n\nThe HarborAPI API is owned by the Auth team and is used for internal service-to-service requests.\n\n- Endpoint: /harbor/v1/fetch\n- Method: GET\n- Rate Limit: 60 requests per minute\n- API Key Prefix: YH-2677\n- Timeout: 3 seconds\n\nAll requests must include the X-Service-Key header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "HarborAPI",
+      "team": "Auth",
+      "endpoint": "/harbor/v1/fetch",
+      "method": "GET",
+      "rate_limit": "60 requests per minute",
+      "key_prefix": "YH-2677",
+      "timeout": "3 seconds",
+      "required_header": "X-Service-Key"
+    }
+  },
+  {
+    "doc_id": "DOC_020",
+    "title": "OrionProxy API Reference",
+    "category": "api_doc",
+    "team": "Security",
+    "content": "Title: OrionProxy API Reference\n\nThe OrionProxy API is owned by the Security team and is used for internal service-to-service requests.\n\n- Endpoint: /orionproxy/v1/fetch\n- Method: GET\n- Rate Limit: 500 requests per minute\n- API Key Prefix: IZ-7468\n- Timeout: 8 seconds\n\nAll requests must include the X-Auth-Token header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "OrionProxy",
+      "team": "Security",
+      "endpoint": "/orionproxy/v1/fetch",
+      "method": "GET",
+      "rate_limit": "500 requests per minute",
+      "key_prefix": "IZ-7468",
+      "timeout": "8 seconds",
+      "required_header": "X-Auth-Token"
+    }
+  },
+  {
+    "doc_id": "DOC_021",
+    "title": "AuroraIndex API Reference",
+    "category": "api_doc",
+    "team": "Infra",
+    "content": "Title: AuroraIndex API Reference\n\nThe AuroraIndex API is owned by the Infra team and is used for internal service-to-service requests.\n\n- Endpoint: /auroraindex/v1/fetch\n- Method: GET\n- Rate Limit: 60 requests per minute\n- API Key Prefix: XK-0097\n- Timeout: 10 seconds\n\nAll requests must include the X-Auth-Token header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "AuroraIndex",
+      "team": "Infra",
+      "endpoint": "/auroraindex/v1/fetch",
+      "method": "GET",
+      "rate_limit": "60 requests per minute",
+      "key_prefix": "XK-0097",
+      "timeout": "10 seconds",
+      "required_header": "X-Auth-Token"
+    }
+  },
+  {
+    "doc_id": "DOC_022",
+    "title": "OrionNotifier API Reference",
+    "category": "api_doc",
+    "team": "Payments",
+    "content": "Title: OrionNotifier API Reference\n\nThe OrionNotifier API is owned by the Payments team and is used for internal service-to-service requests.\n\n- Endpoint: /orionnotifier/v1/fetch\n- Method: POST\n- Rate Limit: 60 requests per minute\n- API Key Prefix: TC-3619\n- Timeout: 3 seconds\n\nAll requests must include the X-Request-Timestamp header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "OrionNotifier",
+      "team": "Payments",
+      "endpoint": "/orionnotifier/v1/fetch",
+      "method": "POST",
+      "rate_limit": "60 requests per minute",
+      "key_prefix": "TC-3619",
+      "timeout": "3 seconds",
+      "required_header": "X-Request-Timestamp"
+    }
+  },
+  {
+    "doc_id": "DOC_023",
+    "title": "VoyagerAPI API Reference",
+    "category": "api_doc",
+    "team": "Security",
+    "content": "Title: VoyagerAPI API Reference\n\nThe VoyagerAPI API is owned by the Security team and is used for internal service-to-service requests.\n\n- Endpoint: /voyager/v1/fetch\n- Method: PUT\n- Rate Limit: 250 requests per minute\n- API Key Prefix: GV-5346\n- Timeout: 3 seconds\n\nAll requests must include the X-Trace-ID header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "VoyagerAPI",
+      "team": "Security",
+      "endpoint": "/voyager/v1/fetch",
+      "method": "PUT",
+      "rate_limit": "250 requests per minute",
+      "key_prefix": "GV-5346",
+      "timeout": "3 seconds",
+      "required_header": "X-Trace-ID"
+    }
+  },
+  {
+    "doc_id": "DOC_024",
+    "title": "AegisIndex API Reference",
+    "category": "api_doc",
+    "team": "Payments",
+    "content": "Title: AegisIndex API Reference\n\nThe AegisIndex API is owned by the Payments team and is used for internal service-to-service requests.\n\n- Endpoint: /aegisindex/v1/fetch\n- Method: GET\n- Rate Limit: 500 requests per minute\n- API Key Prefix: TS-1183\n- Timeout: 10 seconds\n\nAll requests must include the X-Trace-ID header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "AegisIndex",
+      "team": "Payments",
+      "endpoint": "/aegisindex/v1/fetch",
+      "method": "GET",
+      "rate_limit": "500 requests per minute",
+      "key_prefix": "TS-1183",
+      "timeout": "10 seconds",
+      "required_header": "X-Trace-ID"
+    }
+  },
+  {
+    "doc_id": "DOC_025",
+    "title": "NimbusIndex API Reference",
+    "category": "api_doc",
+    "team": "Payments",
+    "content": "Title: NimbusIndex API Reference\n\nThe NimbusIndex API is owned by the Payments team and is used for internal service-to-service requests.\n\n- Endpoint: /nimbusindex/v1/fetch\n- Method: POST\n- Rate Limit: 250 requests per minute\n- API Key Prefix: JF-7849\n- Timeout: 10 seconds\n\nAll requests must include the X-Request-Timestamp header. Requests exceeding the documented rate limit may be throttled by the edge gateway.",
+    "facts": {
+      "api_name": "NimbusIndex",
+      "team": "Payments",
+      "endpoint": "/nimbusindex/v1/fetch",
+      "method": "POST",
+      "rate_limit": "250 requests per minute",
+      "key_prefix": "JF-7849",
+      "timeout": "10 seconds",
+      "required_header": "X-Request-Timestamp"
+    }
+  },
+  {
+    "doc_id": "DOC_026",
+    "title": "VectorSync Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Messaging",
+    "content": "Title: VectorSync Deployment Configuration\n\nThe VectorSync deployment profile is maintained by the Messaging team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 4\n- Cluster Region: us-central-1\n- Auto-scaling Threshold: 75% CPU\n- Rollback Window: 15 minutes\n- Cluster Name: nt-prod-cluster-2\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "VectorSync",
+      "team": "Messaging",
+      "replica_count": "4",
+      "cluster_region": "us-central-1",
+      "autoscaling_threshold": "75%",
+      "rollback_window": "15 minutes",
+      "cluster_name": "nt-prod-cluster-2"
+    }
+  },
+  {
+    "doc_id": "DOC_027",
+    "title": "LumenGateway Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Payments",
+    "content": "Title: LumenGateway Deployment Configuration\n\nThe LumenGateway deployment profile is maintained by the Payments team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 3\n- Cluster Region: eu-west-1\n- Auto-scaling Threshold: 80% CPU\n- Rollback Window: 10 minutes\n- Cluster Name: nt-prod-cluster-6\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "LumenGateway",
+      "team": "Payments",
+      "replica_count": "3",
+      "cluster_region": "eu-west-1",
+      "autoscaling_threshold": "80%",
+      "rollback_window": "10 minutes",
+      "cluster_name": "nt-prod-cluster-6"
+    }
+  },
+  {
+    "doc_id": "DOC_028",
+    "title": "HeliosTokenService Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Compliance",
+    "content": "Title: HeliosTokenService Deployment Configuration\n\nThe HeliosTokenService deployment profile is maintained by the Compliance team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 4\n- Cluster Region: ap-south-1\n- Auto-scaling Threshold: 85% CPU\n- Rollback Window: 15 minutes\n- Cluster Name: nt-prod-cluster-1\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "HeliosTokenService",
+      "team": "Compliance",
+      "replica_count": "4",
+      "cluster_region": "ap-south-1",
+      "autoscaling_threshold": "85%",
+      "rollback_window": "15 minutes",
+      "cluster_name": "nt-prod-cluster-1"
+    }
+  },
+  {
+    "doc_id": "DOC_029",
+    "title": "LumenWorker Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Compliance",
+    "content": "Title: LumenWorker Deployment Configuration\n\nThe LumenWorker deployment profile is maintained by the Compliance team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 5\n- Cluster Region: eu-west-1\n- Auto-scaling Threshold: 70% CPU\n- Rollback Window: 5 minutes\n- Cluster Name: nt-prod-cluster-6\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "LumenWorker",
+      "team": "Compliance",
+      "replica_count": "5",
+      "cluster_region": "eu-west-1",
+      "autoscaling_threshold": "70%",
+      "rollback_window": "5 minutes",
+      "cluster_name": "nt-prod-cluster-6"
+    }
+  },
+  {
+    "doc_id": "DOC_030",
+    "title": "ZephyrGateway Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Analytics",
+    "content": "Title: ZephyrGateway Deployment Configuration\n\nThe ZephyrGateway deployment profile is maintained by the Analytics team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 4\n- Cluster Region: us-east-2\n- Auto-scaling Threshold: 85% CPU\n- Rollback Window: 20 minutes\n- Cluster Name: nt-prod-cluster-9\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "ZephyrGateway",
+      "team": "Analytics",
+      "replica_count": "4",
+      "cluster_region": "us-east-2",
+      "autoscaling_threshold": "85%",
+      "rollback_window": "20 minutes",
+      "cluster_name": "nt-prod-cluster-9"
+    }
+  },
+  {
+    "doc_id": "DOC_031",
+    "title": "HeliosAuth Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Payments",
+    "content": "Title: HeliosAuth Deployment Configuration\n\nThe HeliosAuth deployment profile is maintained by the Payments team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 2\n- Cluster Region: us-east-2\n- Auto-scaling Threshold: 90% CPU\n- Rollback Window: 5 minutes\n- Cluster Name: nt-prod-cluster-6\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "HeliosAuth",
+      "team": "Payments",
+      "replica_count": "2",
+      "cluster_region": "us-east-2",
+      "autoscaling_threshold": "90%",
+      "rollback_window": "5 minutes",
+      "cluster_name": "nt-prod-cluster-6"
+    }
+  },
+  {
+    "doc_id": "DOC_032",
+    "title": "HarborRouter Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Messaging",
+    "content": "Title: HarborRouter Deployment Configuration\n\nThe HarborRouter deployment profile is maintained by the Messaging team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 3\n- Cluster Region: eu-west-2\n- Auto-scaling Threshold: 75% CPU\n- Rollback Window: 5 minutes\n- Cluster Name: nt-prod-cluster-5\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "HarborRouter",
+      "team": "Messaging",
+      "replica_count": "3",
+      "cluster_region": "eu-west-2",
+      "autoscaling_threshold": "75%",
+      "rollback_window": "5 minutes",
+      "cluster_name": "nt-prod-cluster-5"
+    }
+  },
+  {
+    "doc_id": "DOC_033",
+    "title": "OrionAuth Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Auth",
+    "content": "Title: OrionAuth Deployment Configuration\n\nThe OrionAuth deployment profile is maintained by the Auth team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 4\n- Cluster Region: us-east-2\n- Auto-scaling Threshold: 75% CPU\n- Rollback Window: 5 minutes\n- Cluster Name: nt-prod-cluster-6\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "OrionAuth",
+      "team": "Auth",
+      "replica_count": "4",
+      "cluster_region": "us-east-2",
+      "autoscaling_threshold": "75%",
+      "rollback_window": "5 minutes",
+      "cluster_name": "nt-prod-cluster-6"
+    }
+  },
+  {
+    "doc_id": "DOC_034",
+    "title": "ZephyrGateway Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Messaging",
+    "content": "Title: ZephyrGateway Deployment Configuration\n\nThe ZephyrGateway deployment profile is maintained by the Messaging team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 5\n- Cluster Region: ap-south-1\n- Auto-scaling Threshold: 75% CPU\n- Rollback Window: 10 minutes\n- Cluster Name: nt-prod-cluster-3\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "ZephyrGateway",
+      "team": "Messaging",
+      "replica_count": "5",
+      "cluster_region": "ap-south-1",
+      "autoscaling_threshold": "75%",
+      "rollback_window": "10 minutes",
+      "cluster_name": "nt-prod-cluster-3"
+    }
+  },
+  {
+    "doc_id": "DOC_035",
+    "title": "ZephyrGateway Deployment Configuration",
+    "category": "deployment_doc",
+    "team": "Analytics",
+    "content": "Title: ZephyrGateway Deployment Configuration\n\nThe ZephyrGateway deployment profile is maintained by the Analytics team and is used by release engineers during production rollouts.\n\n- Default Replica Count: 5\n- Cluster Region: us-central-1\n- Auto-scaling Threshold: 75% CPU\n- Rollback Window: 15 minutes\n- Cluster Name: nt-prod-cluster-7\n\nIf the auto-scaling threshold is exceeded, the system expands replica capacity automatically. Failed deployments are eligible for rollback within the rollback window.",
+    "facts": {
+      "system_name": "ZephyrGateway",
+      "team": "Analytics",
+      "replica_count": "5",
+      "cluster_region": "us-central-1",
+      "autoscaling_threshold": "75%",
+      "rollback_window": "15 minutes",
+      "cluster_name": "nt-prod-cluster-7"
+    }
+  },
+  {
+    "doc_id": "DOC_036",
+    "title": "ZephyrGateway Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Compliance",
+    "content": "Title: ZephyrGateway Monitoring Profile\n\nThe ZephyrGateway monitoring profile is used by the Compliance team to track production health and trigger alerts.\n\n- Alert Threshold: 75% CPU\n- Check Interval: 60 seconds\n- Incident ID Format: FZW-XXXX\n- Consecutive Check Requirement: 2\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "ZephyrGateway",
+      "team": "Compliance",
+      "alert_threshold": "75%",
+      "check_interval": "60 seconds",
+      "incident_format": "FZW-XXXX",
+      "consecutive_checks": "2"
+    }
+  },
+  {
+    "doc_id": "DOC_037",
+    "title": "AtlasWorker Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Auth",
+    "content": "Title: AtlasWorker Monitoring Profile\n\nThe AtlasWorker monitoring profile is used by the Auth team to track production health and trigger alerts.\n\n- Alert Threshold: 85% CPU\n- Check Interval: 45 seconds\n- Incident ID Format: GOL-XXXX\n- Consecutive Check Requirement: 3\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "AtlasWorker",
+      "team": "Auth",
+      "alert_threshold": "85%",
+      "check_interval": "45 seconds",
+      "incident_format": "GOL-XXXX",
+      "consecutive_checks": "3"
+    }
+  },
+  {
+    "doc_id": "DOC_038",
+    "title": "SignalCache Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Infra",
+    "content": "Title: SignalCache Monitoring Profile\n\nThe SignalCache monitoring profile is used by the Infra team to track production health and trigger alerts.\n\n- Alert Threshold: 75% CPU\n- Check Interval: 30 seconds\n- Incident ID Format: VGM-XXXX\n- Consecutive Check Requirement: 3\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "SignalCache",
+      "team": "Infra",
+      "alert_threshold": "75%",
+      "check_interval": "30 seconds",
+      "incident_format": "VGM-XXXX",
+      "consecutive_checks": "3"
+    }
+  },
+  {
+    "doc_id": "DOC_039",
+    "title": "SummitRouter Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Payments",
+    "content": "Title: SummitRouter Monitoring Profile\n\nThe SummitRouter monitoring profile is used by the Payments team to track production health and trigger alerts.\n\n- Alert Threshold: 80% CPU\n- Check Interval: 60 seconds\n- Incident ID Format: UQM-XXXX\n- Consecutive Check Requirement: 4\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "SummitRouter",
+      "team": "Payments",
+      "alert_threshold": "80%",
+      "check_interval": "60 seconds",
+      "incident_format": "UQM-XXXX",
+      "consecutive_checks": "4"
+    }
+  },
+  {
+    "doc_id": "DOC_040",
+    "title": "SignalCache Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Messaging",
+    "content": "Title: SignalCache Monitoring Profile\n\nThe SignalCache monitoring profile is used by the Messaging team to track production health and trigger alerts.\n\n- Alert Threshold: 80% CPU\n- Check Interval: 30 seconds\n- Incident ID Format: DIF-XXXX\n- Consecutive Check Requirement: 4\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "SignalCache",
+      "team": "Messaging",
+      "alert_threshold": "80%",
+      "check_interval": "30 seconds",
+      "incident_format": "DIF-XXXX",
+      "consecutive_checks": "4"
+    }
+  },
+  {
+    "doc_id": "DOC_041",
+    "title": "SummitRouter Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Auth",
+    "content": "Title: SummitRouter Monitoring Profile\n\nThe SummitRouter monitoring profile is used by the Auth team to track production health and trigger alerts.\n\n- Alert Threshold: 70% CPU\n- Check Interval: 90 seconds\n- Incident ID Format: LXZ-XXXX\n- Consecutive Check Requirement: 3\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "SummitRouter",
+      "team": "Auth",
+      "alert_threshold": "70%",
+      "check_interval": "90 seconds",
+      "incident_format": "LXZ-XXXX",
+      "consecutive_checks": "3"
+    }
+  },
+  {
+    "doc_id": "DOC_042",
+    "title": "AtlasWorker Monitoring Profile",
+    "category": "monitoring_doc",
+    "team": "Storage",
+    "content": "Title: AtlasWorker Monitoring Profile\n\nThe AtlasWorker monitoring profile is used by the Storage team to track production health and trigger alerts.\n\n- Alert Threshold: 90% CPU\n- Check Interval: 30 seconds\n- Incident ID Format: MSG-XXXX\n- Consecutive Check Requirement: 3\n\nAlerts are triggered when the threshold is exceeded for the documented number of consecutive checks. Monitoring events are visible in the central NovaTech incident dashboard.",
+    "facts": {
+      "system_name": "AtlasWorker",
+      "team": "Storage",
+      "alert_threshold": "90%",
+      "check_interval": "30 seconds",
+      "incident_format": "MSG-XXXX",
+      "consecutive_checks": "3"
+    }
+  },
+  {
+    "doc_id": "DOC_043",
+    "title": "Data Retention Policy",
+    "category": "policy_doc",
+    "team": "Compliance",
+    "content": "Title: Data Retention Policy\n\nThe Data Retention Policy applies to the Engineering department and is enforced through internal compliance workflows.\n\n- Log Retention: 90 days\n- Backup Frequency: every 6 hours\n- Approval Threshold: $3000\n- Archive Storage: VaultStore\n\nRecords that exceed the approval threshold require manager review. Archived materials are stored in the documented archive system according to policy.",
+    "facts": {
+      "policy_name": "Data Retention Policy",
+      "department": "Engineering",
+      "retention": "90 days",
+      "backup_frequency": "every 6 hours",
+      "threshold": "$3000",
+      "archive_storage": "VaultStore"
+    }
+  },
+  {
+    "doc_id": "DOC_044",
+    "title": "Access Review Policy",
+    "category": "policy_doc",
+    "team": "Compliance",
+    "content": "Title: Access Review Policy\n\nThe Access Review Policy applies to the Data department and is enforced through internal compliance workflows.\n\n- Log Retention: 90 days\n- Backup Frequency: every 6 hours\n- Approval Threshold: $1500\n- Archive Storage: ColdArchive\n\nRecords that exceed the approval threshold require manager review. Archived materials are stored in the documented archive system according to policy.",
+    "facts": {
+      "policy_name": "Access Review Policy",
+      "department": "Data",
+      "retention": "90 days",
+      "backup_frequency": "every 6 hours",
+      "threshold": "$1500",
+      "archive_storage": "ColdArchive"
+    }
+  },
+  {
+    "doc_id": "DOC_045",
+    "title": "Incident Escalation Policy",
+    "category": "policy_doc",
+    "team": "Compliance",
+    "content": "Title: Incident Escalation Policy\n\nThe Incident Escalation Policy applies to the Engineering department and is enforced through internal compliance workflows.\n\n- Log Retention: 60 days\n- Backup Frequency: daily\n- Approval Threshold: $2000\n- Archive Storage: ColdArchive\n\nRecords that exceed the approval threshold require manager review. Archived materials are stored in the documented archive system according to policy.",
+    "facts": {
+      "policy_name": "Incident Escalation Policy",
+      "department": "Engineering",
+      "retention": "60 days",
+      "backup_frequency": "daily",
+      "threshold": "$2000",
+      "archive_storage": "ColdArchive"
+    }
+  },
+  {
+    "doc_id": "DOC_046",
+    "title": "Service Backup Policy",
+    "category": "policy_doc",
+    "team": "Compliance",
+    "content": "Title: Service Backup Policy\n\nThe Service Backup Policy applies to the Operations department and is enforced through internal compliance workflows.\n\n- Log Retention: 60 days\n- Backup Frequency: every 12 hours\n- Approval Threshold: $1000\n- Archive Storage: DeltaFreeze\n\nRecords that exceed the approval threshold require manager review. Archived materials are stored in the documented archive system according to policy.",
+    "facts": {
+      "policy_name": "Service Backup Policy",
+      "department": "Operations",
+      "retention": "60 days",
+      "backup_frequency": "every 12 hours",
+      "threshold": "$1000",
+      "archive_storage": "DeltaFreeze"
+    }
+  },
+  {
+    "doc_id": "DOC_047",
+    "title": "Credential Rotation Policy",
+    "category": "policy_doc",
+    "team": "Compliance",
+    "content": "Title: Credential Rotation Policy\n\nThe Credential Rotation Policy applies to the Operations department and is enforced through internal compliance workflows.\n\n- Log Retention: 45 days\n- Backup Frequency: daily\n- Approval Threshold: $2000\n- Archive Storage: Glacier-X\n\nRecords that exceed the approval threshold require manager review. Archived materials are stored in the documented archive system according to policy.",
+    "facts": {
+      "policy_name": "Credential Rotation Policy",
+      "department": "Operations",
+      "retention": "45 days",
+      "backup_frequency": "daily",
+      "threshold": "$2000",
+      "archive_storage": "Glacier-X"
+    }
+  },
+  {
+    "doc_id": "DOC_048",
+    "title": "SummitRouter Incident Runbook",
+    "category": "runbook_doc",
+    "team": "Monitoring",
+    "content": "Title: SummitRouter Incident Runbook\n\nThis runbook is maintained by the Monitoring team and should be used when the system experiences a SEV-1 incident.\n\n- Trigger Threshold: 85% CPU\n- Primary Response Action: fail over to the backup region\n- Fallback Region: eu-west-2\n- Runbook Code: RBK-7738\n\nIf the trigger threshold is sustained during a high-severity event, on-call engineers should execute the primary action first. If recovery fails, traffic should be shifted to the fallback region.",
+    "facts": {
+      "system_name": "SummitRouter",
+      "team": "Monitoring",
+      "severity": "SEV-1",
+      "trigger_threshold": "85%",
+      "primary_action": "fail over to the backup region",
+      "fallback_region": "eu-west-2",
+      "incident_code": "RBK-7738"
+    }
+  },
+  {
+    "doc_id": "DOC_049",
+    "title": "VectorAuth Incident Runbook",
+    "category": "runbook_doc",
+    "team": "Platform",
+    "content": "Title: VectorAuth Incident Runbook\n\nThis runbook is maintained by the Platform team and should be used when the system experiences a SEV-1 incident.\n\n- Trigger Threshold: 70% CPU\n- Primary Response Action: invalidate active tokens\n- Fallback Region: ap-south-1\n- Runbook Code: RBK-9513\n\nIf the trigger threshold is sustained during a high-severity event, on-call engineers should execute the primary action first. If recovery fails, traffic should be shifted to the fallback region.",
+    "facts": {
+      "system_name": "VectorAuth",
+      "team": "Platform",
+      "severity": "SEV-1",
+      "trigger_threshold": "70%",
+      "primary_action": "invalidate active tokens",
+      "fallback_region": "ap-south-1",
+      "incident_code": "RBK-9513"
+    }
+  },
+  {
+    "doc_id": "DOC_050",
+    "title": "VectorSync Incident Runbook",
+    "category": "runbook_doc",
+    "team": "Monitoring",
+    "content": "Title: VectorSync Incident Runbook\n\nThis runbook is maintained by the Monitoring team and should be used when the system experiences a SEV-1 incident.\n\n- Trigger Threshold: 75% CPU\n- Primary Response Action: rotate the service key\n- Fallback Region: us-central-1\n- Runbook Code: RBK-0379\n\nIf the trigger threshold is sustained during a high-severity event, on-call engineers should execute the primary action first. If recovery fails, traffic should be shifted to the fallback region.",
+    "facts": {
+      "system_name": "VectorSync",
+      "team": "Monitoring",
+      "severity": "SEV-1",
+      "trigger_threshold": "75%",
+      "primary_action": "rotate the service key",
+      "fallback_region": "us-central-1",
+      "incident_code": "RBK-0379"
+    }
+  },
+  {
+    "doc_id": "DOC_051",
+    "title": "SignalCache Incident Runbook",
+    "category": "runbook_doc",
+    "team": "Payments",
+    "content": "Title: SignalCache Incident Runbook\n\nThis runbook is maintained by the Payments team and should be used when the system experiences a SEV-2 incident.\n\n- Trigger Threshold: 85% CPU\n- Primary Response Action: scale replicas to 5\n- Fallback Region: eu-west-2\n- Runbook Code: RBK-7632\n\nIf the trigger threshold is sustained during a high-severity event, on-call engineers should execute the primary action first. If recovery fails, traffic should be shifted to the fallback region.",
+    "facts": {
+      "system_name": "SignalCache",
+      "team": "Payments",
+      "severity": "SEV-2",
+      "trigger_threshold": "85%",
+      "primary_action": "scale replicas to 5",
+      "fallback_region": "eu-west-2",
+      "incident_code": "RBK-7632"
+    }
+  },
+  {
+    "doc_id": "DOC_052",
+    "title": "VectorSync Incident Runbook",
+    "category": "runbook_doc",
+    "team": "Platform",
+    "content": "Title: VectorSync Incident Runbook\n\nThis runbook is maintained by the Platform team and should be used when the system experiences a SEV-1 incident.\n\n- Trigger Threshold: 70% CPU\n- Primary Response Action: pause external writes\n- Fallback Region: us-east-2\n- Runbook Code: RBK-2870\n\nIf the trigger threshold is sustained during a high-severity event, on-call engineers should execute the primary action first. If recovery fails, traffic should be shifted to the fallback region.",
+    "facts": {
+      "system_name": "VectorSync",
+      "team": "Platform",
+      "severity": "SEV-1",
+      "trigger_threshold": "70%",
+      "primary_action": "pause external writes",
+      "fallback_region": "us-east-2",
+      "incident_code": "RBK-2870"
+    }
+  }
+]

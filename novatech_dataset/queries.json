@@ -1,0 +1,2189 @@
+[
+  {
+    "query_id": "Q_0001",
+    "query": "What is the authentication key for HeliosAuth?",
+    "answer": "CMD-5594",
+    "source_doc_id": "DOC_001",
+    "title": "HeliosAuth Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does HeliosAuth use for authentication?",
+      "Give the auth key for HeliosAuth.",
+      "Which authentication key belongs to HeliosAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0002",
+    "query": "What port does HeliosAuth use?",
+    "answer": "7418",
+    "source_doc_id": "DOC_001",
+    "title": "HeliosAuth Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to HeliosAuth?",
+      "What is the default port for HeliosAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0003",
+    "query": "How long do tokens last for HeliosAuth?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_001",
+    "title": "HeliosAuth Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for HeliosAuth?",
+      "How long before HeliosAuth tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0004",
+    "query": "Which team owns HeliosAuth?",
+    "answer": "Infra",
+    "source_doc_id": "DOC_001",
+    "title": "HeliosAuth Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains HeliosAuth?",
+      "What team is responsible for HeliosAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0005",
+    "query": "What is the authentication key for LumenWorker?",
+    "answer": "RJU-9593",
+    "source_doc_id": "DOC_002",
+    "title": "LumenWorker Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does LumenWorker use for authentication?",
+      "Give the auth key for LumenWorker.",
+      "Which authentication key belongs to LumenWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0006",
+    "query": "What port does LumenWorker use?",
+    "answer": "7322",
+    "source_doc_id": "DOC_002",
+    "title": "LumenWorker Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to LumenWorker?",
+      "What is the default port for LumenWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0007",
+    "query": "How long do tokens last for LumenWorker?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_002",
+    "title": "LumenWorker Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for LumenWorker?",
+      "How long before LumenWorker tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0008",
+    "query": "Which team owns LumenWorker?",
+    "answer": "Messaging",
+    "source_doc_id": "DOC_002",
+    "title": "LumenWorker Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains LumenWorker?",
+      "What team is responsible for LumenWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0009",
+    "query": "What is the authentication key for VectorGateway?",
+    "answer": "CHD-6475",
+    "source_doc_id": "DOC_003",
+    "title": "VectorGateway Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does VectorGateway use for authentication?",
+      "Give the auth key for VectorGateway.",
+      "Which authentication key belongs to VectorGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0010",
+    "query": "What port does VectorGateway use?",
+    "answer": "8185",
+    "source_doc_id": "DOC_003",
+    "title": "VectorGateway Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to VectorGateway?",
+      "What is the default port for VectorGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0011",
+    "query": "How long do tokens last for VectorGateway?",
+    "answer": "30 minutes",
+    "source_doc_id": "DOC_003",
+    "title": "VectorGateway Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for VectorGateway?",
+      "How long before VectorGateway tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0012",
+    "query": "Which team owns VectorGateway?",
+    "answer": "Compliance",
+    "source_doc_id": "DOC_003",
+    "title": "VectorGateway Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains VectorGateway?",
+      "What team is responsible for VectorGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0013",
+    "query": "What is the authentication key for HeliosTokenService?",
+    "answer": "WVU-1928",
+    "source_doc_id": "DOC_004",
+    "title": "HeliosTokenService Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does HeliosTokenService use for authentication?",
+      "Give the auth key for HeliosTokenService.",
+      "Which authentication key belongs to HeliosTokenService?"
+    ]
+  },
+  {
+    "query_id": "Q_0014",
+    "query": "What port does HeliosTokenService use?",
+    "answer": "8093",
+    "source_doc_id": "DOC_004",
+    "title": "HeliosTokenService Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to HeliosTokenService?",
+      "What is the default port for HeliosTokenService?"
+    ]
+  },
+  {
+    "query_id": "Q_0015",
+    "query": "How long do tokens last for HeliosTokenService?",
+    "answer": "30 minutes",
+    "source_doc_id": "DOC_004",
+    "title": "HeliosTokenService Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for HeliosTokenService?",
+      "How long before HeliosTokenService tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0016",
+    "query": "Which team owns HeliosTokenService?",
+    "answer": "HR",
+    "source_doc_id": "DOC_004",
+    "title": "HeliosTokenService Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains HeliosTokenService?",
+      "What team is responsible for HeliosTokenService?"
+    ]
+  },
+  {
+    "query_id": "Q_0017",
+    "query": "What is the authentication key for SummitRouter?",
+    "answer": "WRH-5030",
+    "source_doc_id": "DOC_005",
+    "title": "SummitRouter Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does SummitRouter use for authentication?",
+      "Give the auth key for SummitRouter.",
+      "Which authentication key belongs to SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0018",
+    "query": "What port does SummitRouter use?",
+    "answer": "9621",
+    "source_doc_id": "DOC_005",
+    "title": "SummitRouter Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to SummitRouter?",
+      "What is the default port for SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0019",
+    "query": "How long do tokens last for SummitRouter?",
+    "answer": "45 minutes",
+    "source_doc_id": "DOC_005",
+    "title": "SummitRouter Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for SummitRouter?",
+      "How long before SummitRouter tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0020",
+    "query": "Which team owns SummitRouter?",
+    "answer": "Data",
+    "source_doc_id": "DOC_005",
+    "title": "SummitRouter Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains SummitRouter?",
+      "What team is responsible for SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0021",
+    "query": "What is the authentication key for OrionAuth?",
+    "answer": "WKG-7672",
+    "source_doc_id": "DOC_006",
+    "title": "OrionAuth Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does OrionAuth use for authentication?",
+      "Give the auth key for OrionAuth.",
+      "Which authentication key belongs to OrionAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0022",
+    "query": "What port does OrionAuth use?",
+    "answer": "9323",
+    "source_doc_id": "DOC_006",
+    "title": "OrionAuth Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to OrionAuth?",
+      "What is the default port for OrionAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0023",
+    "query": "How long do tokens last for OrionAuth?",
+    "answer": "45 minutes",
+    "source_doc_id": "DOC_006",
+    "title": "OrionAuth Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for OrionAuth?",
+      "How long before OrionAuth tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0024",
+    "query": "Which team owns OrionAuth?",
+    "answer": "Monitoring",
+    "source_doc_id": "DOC_006",
+    "title": "OrionAuth Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains OrionAuth?",
+      "What team is responsible for OrionAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0025",
+    "query": "What is the authentication key for AtlasWorker?",
+    "answer": "IXS-6965",
+    "source_doc_id": "DOC_007",
+    "title": "AtlasWorker Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does AtlasWorker use for authentication?",
+      "Give the auth key for AtlasWorker.",
+      "Which authentication key belongs to AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0026",
+    "query": "What port does AtlasWorker use?",
+    "answer": "9207",
+    "source_doc_id": "DOC_007",
+    "title": "AtlasWorker Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to AtlasWorker?",
+      "What is the default port for AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0027",
+    "query": "How long do tokens last for AtlasWorker?",
+    "answer": "30 minutes",
+    "source_doc_id": "DOC_007",
+    "title": "AtlasWorker Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for AtlasWorker?",
+      "How long before AtlasWorker tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0028",
+    "query": "Which team owns AtlasWorker?",
+    "answer": "Infra",
+    "source_doc_id": "DOC_007",
+    "title": "AtlasWorker Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains AtlasWorker?",
+      "What team is responsible for AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0029",
+    "query": "What is the authentication key for VectorAuth?",
+    "answer": "DEU-2691",
+    "source_doc_id": "DOC_008",
+    "title": "VectorAuth Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does VectorAuth use for authentication?",
+      "Give the auth key for VectorAuth.",
+      "Which authentication key belongs to VectorAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0030",
+    "query": "What port does VectorAuth use?",
+    "answer": "7192",
+    "source_doc_id": "DOC_008",
+    "title": "VectorAuth Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to VectorAuth?",
+      "What is the default port for VectorAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0031",
+    "query": "How long do tokens last for VectorAuth?",
+    "answer": "60 minutes",
+    "source_doc_id": "DOC_008",
+    "title": "VectorAuth Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for VectorAuth?",
+      "How long before VectorAuth tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0032",
+    "query": "Which team owns VectorAuth?",
+    "answer": "Messaging",
+    "source_doc_id": "DOC_008",
+    "title": "VectorAuth Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains VectorAuth?",
+      "What team is responsible for VectorAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0033",
+    "query": "What is the authentication key for HarborWorker?",
+    "answer": "RAV-1845",
+    "source_doc_id": "DOC_009",
+    "title": "HarborWorker Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does HarborWorker use for authentication?",
+      "Give the auth key for HarborWorker.",
+      "Which authentication key belongs to HarborWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0034",
+    "query": "What port does HarborWorker use?",
+    "answer": "8029",
+    "source_doc_id": "DOC_009",
+    "title": "HarborWorker Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to HarborWorker?",
+      "What is the default port for HarborWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0035",
+    "query": "How long do tokens last for HarborWorker?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_009",
+    "title": "HarborWorker Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for HarborWorker?",
+      "How long before HarborWorker tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0036",
+    "query": "Which team owns HarborWorker?",
+    "answer": "Storage",
+    "source_doc_id": "DOC_009",
+    "title": "HarborWorker Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains HarborWorker?",
+      "What team is responsible for HarborWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0037",
+    "query": "What is the authentication key for HarborRouter?",
+    "answer": "XXI-8281",
+    "source_doc_id": "DOC_010",
+    "title": "HarborRouter Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does HarborRouter use for authentication?",
+      "Give the auth key for HarborRouter.",
+      "Which authentication key belongs to HarborRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0038",
+    "query": "What port does HarborRouter use?",
+    "answer": "7013",
+    "source_doc_id": "DOC_010",
+    "title": "HarborRouter Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to HarborRouter?",
+      "What is the default port for HarborRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0039",
+    "query": "How long do tokens last for HarborRouter?",
+    "answer": "45 minutes",
+    "source_doc_id": "DOC_010",
+    "title": "HarborRouter Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for HarborRouter?",
+      "How long before HarborRouter tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0040",
+    "query": "Which team owns HarborRouter?",
+    "answer": "Security",
+    "source_doc_id": "DOC_010",
+    "title": "HarborRouter Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains HarborRouter?",
+      "What team is responsible for HarborRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0041",
+    "query": "What is the authentication key for VectorSync?",
+    "answer": "YFR-8095",
+    "source_doc_id": "DOC_011",
+    "title": "VectorSync Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does VectorSync use for authentication?",
+      "Give the auth key for VectorSync.",
+      "Which authentication key belongs to VectorSync?"
+    ]
+  },
+  {
+    "query_id": "Q_0042",
+    "query": "What port does VectorSync use?",
+    "answer": "8531",
+    "source_doc_id": "DOC_011",
+    "title": "VectorSync Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to VectorSync?",
+      "What is the default port for VectorSync?"
+    ]
+  },
+  {
+    "query_id": "Q_0043",
+    "query": "How long do tokens last for VectorSync?",
+    "answer": "60 minutes",
+    "source_doc_id": "DOC_011",
+    "title": "VectorSync Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for VectorSync?",
+      "How long before VectorSync tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0044",
+    "query": "Which team owns VectorSync?",
+    "answer": "Storage",
+    "source_doc_id": "DOC_011",
+    "title": "VectorSync Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains VectorSync?",
+      "What team is responsible for VectorSync?"
+    ]
+  },
+  {
+    "query_id": "Q_0045",
+    "query": "What is the authentication key for SummitLedger?",
+    "answer": "HBH-9117",
+    "source_doc_id": "DOC_012",
+    "title": "SummitLedger Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does SummitLedger use for authentication?",
+      "Give the auth key for SummitLedger.",
+      "Which authentication key belongs to SummitLedger?"
+    ]
+  },
+  {
+    "query_id": "Q_0046",
+    "query": "What port does SummitLedger use?",
+    "answer": "8259",
+    "source_doc_id": "DOC_012",
+    "title": "SummitLedger Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to SummitLedger?",
+      "What is the default port for SummitLedger?"
+    ]
+  },
+  {
+    "query_id": "Q_0047",
+    "query": "How long do tokens last for SummitLedger?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_012",
+    "title": "SummitLedger Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for SummitLedger?",
+      "How long before SummitLedger tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0048",
+    "query": "Which team owns SummitLedger?",
+    "answer": "Payments",
+    "source_doc_id": "DOC_012",
+    "title": "SummitLedger Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains SummitLedger?",
+      "What team is responsible for SummitLedger?"
+    ]
+  },
+  {
+    "query_id": "Q_0049",
+    "query": "What is the authentication key for ZephyrGateway?",
+    "answer": "RFI-8963",
+    "source_doc_id": "DOC_013",
+    "title": "ZephyrGateway Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does ZephyrGateway use for authentication?",
+      "Give the auth key for ZephyrGateway.",
+      "Which authentication key belongs to ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0050",
+    "query": "What port does ZephyrGateway use?",
+    "answer": "8946",
+    "source_doc_id": "DOC_013",
+    "title": "ZephyrGateway Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to ZephyrGateway?",
+      "What is the default port for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0051",
+    "query": "How long do tokens last for ZephyrGateway?",
+    "answer": "30 minutes",
+    "source_doc_id": "DOC_013",
+    "title": "ZephyrGateway Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for ZephyrGateway?",
+      "How long before ZephyrGateway tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0052",
+    "query": "Which team owns ZephyrGateway?",
+    "answer": "Analytics",
+    "source_doc_id": "DOC_013",
+    "title": "ZephyrGateway Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains ZephyrGateway?",
+      "What team is responsible for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0053",
+    "query": "What is the authentication key for SignalCache?",
+    "answer": "OQO-1331",
+    "source_doc_id": "DOC_014",
+    "title": "SignalCache Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does SignalCache use for authentication?",
+      "Give the auth key for SignalCache.",
+      "Which authentication key belongs to SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0054",
+    "query": "What port does SignalCache use?",
+    "answer": "8529",
+    "source_doc_id": "DOC_014",
+    "title": "SignalCache Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to SignalCache?",
+      "What is the default port for SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0055",
+    "query": "How long do tokens last for SignalCache?",
+    "answer": "45 minutes",
+    "source_doc_id": "DOC_014",
+    "title": "SignalCache Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for SignalCache?",
+      "How long before SignalCache tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0056",
+    "query": "Which team owns SignalCache?",
+    "answer": "Security",
+    "source_doc_id": "DOC_014",
+    "title": "SignalCache Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains SignalCache?",
+      "What team is responsible for SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0057",
+    "query": "What is the authentication key for LumenGateway?",
+    "answer": "HAC-0310",
+    "source_doc_id": "DOC_015",
+    "title": "LumenGateway Service Overview",
+    "fact_type": "auth_key",
+    "paraphrases": [
+      "What key does LumenGateway use for authentication?",
+      "Give the auth key for LumenGateway.",
+      "Which authentication key belongs to LumenGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0058",
+    "query": "What port does LumenGateway use?",
+    "answer": "9410",
+    "source_doc_id": "DOC_015",
+    "title": "LumenGateway Service Overview",
+    "fact_type": "port",
+    "paraphrases": [
+      "Which port is assigned to LumenGateway?",
+      "What is the default port for LumenGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0059",
+    "query": "How long do tokens last for LumenGateway?",
+    "answer": "45 minutes",
+    "source_doc_id": "DOC_015",
+    "title": "LumenGateway Service Overview",
+    "fact_type": "token_expiry",
+    "paraphrases": [
+      "What is the token expiry for LumenGateway?",
+      "How long before LumenGateway tokens expire?"
+    ]
+  },
+  {
+    "query_id": "Q_0060",
+    "query": "Which team owns LumenGateway?",
+    "answer": "Storage",
+    "source_doc_id": "DOC_015",
+    "title": "LumenGateway Service Overview",
+    "fact_type": "team",
+    "paraphrases": [
+      "Who maintains LumenGateway?",
+      "What team is responsible for LumenGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0061",
+    "query": "What endpoint is used by the EmberProxy API?",
+    "answer": "/emberproxy/v1/fetch",
+    "source_doc_id": "DOC_016",
+    "title": "EmberProxy API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for EmberProxy.",
+      "What path does the EmberProxy API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0062",
+    "query": "What method does the EmberProxy API use?",
+    "answer": "DELETE",
+    "source_doc_id": "DOC_016",
+    "title": "EmberProxy API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for EmberProxy?",
+      "Is the EmberProxy API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0063",
+    "query": "What is the rate limit for the EmberProxy API?",
+    "answer": "120 requests per minute",
+    "source_doc_id": "DOC_016",
+    "title": "EmberProxy API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for EmberProxy?",
+      "What limit is configured for the EmberProxy API?"
+    ]
+  },
+  {
+    "query_id": "Q_0064",
+    "query": "What header is required by the EmberProxy API?",
+    "answer": "X-Service-Key",
+    "source_doc_id": "DOC_016",
+    "title": "EmberProxy API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to EmberProxy?",
+      "What required header does EmberProxy expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0065",
+    "query": "What endpoint is used by the AuroraAPI API?",
+    "answer": "/aurora/v1/fetch",
+    "source_doc_id": "DOC_017",
+    "title": "AuroraAPI API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for AuroraAPI.",
+      "What path does the AuroraAPI API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0066",
+    "query": "What method does the AuroraAPI API use?",
+    "answer": "DELETE",
+    "source_doc_id": "DOC_017",
+    "title": "AuroraAPI API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for AuroraAPI?",
+      "Is the AuroraAPI API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0067",
+    "query": "What is the rate limit for the AuroraAPI API?",
+    "answer": "250 requests per minute",
+    "source_doc_id": "DOC_017",
+    "title": "AuroraAPI API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for AuroraAPI?",
+      "What limit is configured for the AuroraAPI API?"
+    ]
+  },
+  {
+    "query_id": "Q_0068",
+    "query": "What header is required by the AuroraAPI API?",
+    "answer": "X-Trace-ID",
+    "source_doc_id": "DOC_017",
+    "title": "AuroraAPI API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to AuroraAPI?",
+      "What required header does AuroraAPI expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0069",
+    "query": "What endpoint is used by the HeliosProxy API?",
+    "answer": "/heliosproxy/v1/fetch",
+    "source_doc_id": "DOC_018",
+    "title": "HeliosProxy API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for HeliosProxy.",
+      "What path does the HeliosProxy API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0070",
+    "query": "What method does the HeliosProxy API use?",
+    "answer": "POST",
+    "source_doc_id": "DOC_018",
+    "title": "HeliosProxy API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for HeliosProxy?",
+      "Is the HeliosProxy API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0071",
+    "query": "What is the rate limit for the HeliosProxy API?",
+    "answer": "500 requests per minute",
+    "source_doc_id": "DOC_018",
+    "title": "HeliosProxy API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for HeliosProxy?",
+      "What limit is configured for the HeliosProxy API?"
+    ]
+  },
+  {
+    "query_id": "Q_0072",
+    "query": "What header is required by the HeliosProxy API?",
+    "answer": "X-Service-Key",
+    "source_doc_id": "DOC_018",
+    "title": "HeliosProxy API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to HeliosProxy?",
+      "What required header does HeliosProxy expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0073",
+    "query": "What endpoint is used by the HarborAPI API?",
+    "answer": "/harbor/v1/fetch",
+    "source_doc_id": "DOC_019",
+    "title": "HarborAPI API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for HarborAPI.",
+      "What path does the HarborAPI API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0074",
+    "query": "What method does the HarborAPI API use?",
+    "answer": "GET",
+    "source_doc_id": "DOC_019",
+    "title": "HarborAPI API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for HarborAPI?",
+      "Is the HarborAPI API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0075",
+    "query": "What is the rate limit for the HarborAPI API?",
+    "answer": "60 requests per minute",
+    "source_doc_id": "DOC_019",
+    "title": "HarborAPI API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for HarborAPI?",
+      "What limit is configured for the HarborAPI API?"
+    ]
+  },
+  {
+    "query_id": "Q_0076",
+    "query": "What header is required by the HarborAPI API?",
+    "answer": "X-Service-Key",
+    "source_doc_id": "DOC_019",
+    "title": "HarborAPI API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to HarborAPI?",
+      "What required header does HarborAPI expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0077",
+    "query": "What endpoint is used by the OrionProxy API?",
+    "answer": "/orionproxy/v1/fetch",
+    "source_doc_id": "DOC_020",
+    "title": "OrionProxy API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for OrionProxy.",
+      "What path does the OrionProxy API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0078",
+    "query": "What method does the OrionProxy API use?",
+    "answer": "GET",
+    "source_doc_id": "DOC_020",
+    "title": "OrionProxy API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for OrionProxy?",
+      "Is the OrionProxy API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0079",
+    "query": "What is the rate limit for the OrionProxy API?",
+    "answer": "500 requests per minute",
+    "source_doc_id": "DOC_020",
+    "title": "OrionProxy API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for OrionProxy?",
+      "What limit is configured for the OrionProxy API?"
+    ]
+  },
+  {
+    "query_id": "Q_0080",
+    "query": "What header is required by the OrionProxy API?",
+    "answer": "X-Auth-Token",
+    "source_doc_id": "DOC_020",
+    "title": "OrionProxy API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to OrionProxy?",
+      "What required header does OrionProxy expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0081",
+    "query": "What endpoint is used by the AuroraIndex API?",
+    "answer": "/auroraindex/v1/fetch",
+    "source_doc_id": "DOC_021",
+    "title": "AuroraIndex API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for AuroraIndex.",
+      "What path does the AuroraIndex API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0082",
+    "query": "What method does the AuroraIndex API use?",
+    "answer": "GET",
+    "source_doc_id": "DOC_021",
+    "title": "AuroraIndex API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for AuroraIndex?",
+      "Is the AuroraIndex API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0083",
+    "query": "What is the rate limit for the AuroraIndex API?",
+    "answer": "60 requests per minute",
+    "source_doc_id": "DOC_021",
+    "title": "AuroraIndex API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for AuroraIndex?",
+      "What limit is configured for the AuroraIndex API?"
+    ]
+  },
+  {
+    "query_id": "Q_0084",
+    "query": "What header is required by the AuroraIndex API?",
+    "answer": "X-Auth-Token",
+    "source_doc_id": "DOC_021",
+    "title": "AuroraIndex API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to AuroraIndex?",
+      "What required header does AuroraIndex expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0085",
+    "query": "What endpoint is used by the OrionNotifier API?",
+    "answer": "/orionnotifier/v1/fetch",
+    "source_doc_id": "DOC_022",
+    "title": "OrionNotifier API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for OrionNotifier.",
+      "What path does the OrionNotifier API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0086",
+    "query": "What method does the OrionNotifier API use?",
+    "answer": "POST",
+    "source_doc_id": "DOC_022",
+    "title": "OrionNotifier API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for OrionNotifier?",
+      "Is the OrionNotifier API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0087",
+    "query": "What is the rate limit for the OrionNotifier API?",
+    "answer": "60 requests per minute",
+    "source_doc_id": "DOC_022",
+    "title": "OrionNotifier API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for OrionNotifier?",
+      "What limit is configured for the OrionNotifier API?"
+    ]
+  },
+  {
+    "query_id": "Q_0088",
+    "query": "What header is required by the OrionNotifier API?",
+    "answer": "X-Request-Timestamp",
+    "source_doc_id": "DOC_022",
+    "title": "OrionNotifier API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to OrionNotifier?",
+      "What required header does OrionNotifier expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0089",
+    "query": "What endpoint is used by the VoyagerAPI API?",
+    "answer": "/voyager/v1/fetch",
+    "source_doc_id": "DOC_023",
+    "title": "VoyagerAPI API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for VoyagerAPI.",
+      "What path does the VoyagerAPI API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0090",
+    "query": "What method does the VoyagerAPI API use?",
+    "answer": "PUT",
+    "source_doc_id": "DOC_023",
+    "title": "VoyagerAPI API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for VoyagerAPI?",
+      "Is the VoyagerAPI API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0091",
+    "query": "What is the rate limit for the VoyagerAPI API?",
+    "answer": "250 requests per minute",
+    "source_doc_id": "DOC_023",
+    "title": "VoyagerAPI API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for VoyagerAPI?",
+      "What limit is configured for the VoyagerAPI API?"
+    ]
+  },
+  {
+    "query_id": "Q_0092",
+    "query": "What header is required by the VoyagerAPI API?",
+    "answer": "X-Trace-ID",
+    "source_doc_id": "DOC_023",
+    "title": "VoyagerAPI API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to VoyagerAPI?",
+      "What required header does VoyagerAPI expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0093",
+    "query": "What endpoint is used by the AegisIndex API?",
+    "answer": "/aegisindex/v1/fetch",
+    "source_doc_id": "DOC_024",
+    "title": "AegisIndex API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for AegisIndex.",
+      "What path does the AegisIndex API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0094",
+    "query": "What method does the AegisIndex API use?",
+    "answer": "GET",
+    "source_doc_id": "DOC_024",
+    "title": "AegisIndex API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for AegisIndex?",
+      "Is the AegisIndex API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0095",
+    "query": "What is the rate limit for the AegisIndex API?",
+    "answer": "500 requests per minute",
+    "source_doc_id": "DOC_024",
+    "title": "AegisIndex API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for AegisIndex?",
+      "What limit is configured for the AegisIndex API?"
+    ]
+  },
+  {
+    "query_id": "Q_0096",
+    "query": "What header is required by the AegisIndex API?",
+    "answer": "X-Trace-ID",
+    "source_doc_id": "DOC_024",
+    "title": "AegisIndex API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to AegisIndex?",
+      "What required header does AegisIndex expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0097",
+    "query": "What endpoint is used by the NimbusIndex API?",
+    "answer": "/nimbusindex/v1/fetch",
+    "source_doc_id": "DOC_025",
+    "title": "NimbusIndex API Reference",
+    "fact_type": "endpoint",
+    "paraphrases": [
+      "Give the endpoint for NimbusIndex.",
+      "What path does the NimbusIndex API expose?"
+    ]
+  },
+  {
+    "query_id": "Q_0098",
+    "query": "What method does the NimbusIndex API use?",
+    "answer": "POST",
+    "source_doc_id": "DOC_025",
+    "title": "NimbusIndex API Reference",
+    "fact_type": "method",
+    "paraphrases": [
+      "Which HTTP method is documented for NimbusIndex?",
+      "Is the NimbusIndex API GET or POST or another method?"
+    ]
+  },
+  {
+    "query_id": "Q_0099",
+    "query": "What is the rate limit for the NimbusIndex API?",
+    "answer": "250 requests per minute",
+    "source_doc_id": "DOC_025",
+    "title": "NimbusIndex API Reference",
+    "fact_type": "rate_limit",
+    "paraphrases": [
+      "How many requests per minute are allowed for NimbusIndex?",
+      "What limit is configured for the NimbusIndex API?"
+    ]
+  },
+  {
+    "query_id": "Q_0100",
+    "query": "What header is required by the NimbusIndex API?",
+    "answer": "X-Request-Timestamp",
+    "source_doc_id": "DOC_025",
+    "title": "NimbusIndex API Reference",
+    "fact_type": "required_header",
+    "paraphrases": [
+      "Which header must be sent to NimbusIndex?",
+      "What required header does NimbusIndex expect?"
+    ]
+  },
+  {
+    "query_id": "Q_0101",
+    "query": "What is the default replica count for VectorSync?",
+    "answer": "4",
+    "source_doc_id": "DOC_026",
+    "title": "VectorSync Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does VectorSync use by default?",
+      "What replica count is configured for VectorSync?"
+    ]
+  },
+  {
+    "query_id": "Q_0102",
+    "query": "What CPU threshold triggers autoscaling for VectorSync?",
+    "answer": "75%",
+    "source_doc_id": "DOC_026",
+    "title": "VectorSync Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does VectorSync autoscale?",
+      "What is the autoscaling threshold for VectorSync?"
+    ]
+  },
+  {
+    "query_id": "Q_0103",
+    "query": "What is the rollback window for VectorSync?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_026",
+    "title": "VectorSync Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for VectorSync?",
+      "Within what window can VectorSync roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0104",
+    "query": "What is the default replica count for LumenGateway?",
+    "answer": "3",
+    "source_doc_id": "DOC_027",
+    "title": "LumenGateway Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does LumenGateway use by default?",
+      "What replica count is configured for LumenGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0105",
+    "query": "What CPU threshold triggers autoscaling for LumenGateway?",
+    "answer": "80%",
+    "source_doc_id": "DOC_027",
+    "title": "LumenGateway Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does LumenGateway autoscale?",
+      "What is the autoscaling threshold for LumenGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0106",
+    "query": "What is the rollback window for LumenGateway?",
+    "answer": "10 minutes",
+    "source_doc_id": "DOC_027",
+    "title": "LumenGateway Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for LumenGateway?",
+      "Within what window can LumenGateway roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0107",
+    "query": "What is the default replica count for HeliosTokenService?",
+    "answer": "4",
+    "source_doc_id": "DOC_028",
+    "title": "HeliosTokenService Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does HeliosTokenService use by default?",
+      "What replica count is configured for HeliosTokenService?"
+    ]
+  },
+  {
+    "query_id": "Q_0108",
+    "query": "What CPU threshold triggers autoscaling for HeliosTokenService?",
+    "answer": "85%",
+    "source_doc_id": "DOC_028",
+    "title": "HeliosTokenService Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does HeliosTokenService autoscale?",
+      "What is the autoscaling threshold for HeliosTokenService?"
+    ]
+  },
+  {
+    "query_id": "Q_0109",
+    "query": "What is the rollback window for HeliosTokenService?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_028",
+    "title": "HeliosTokenService Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for HeliosTokenService?",
+      "Within what window can HeliosTokenService roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0110",
+    "query": "What is the default replica count for LumenWorker?",
+    "answer": "5",
+    "source_doc_id": "DOC_029",
+    "title": "LumenWorker Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does LumenWorker use by default?",
+      "What replica count is configured for LumenWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0111",
+    "query": "What CPU threshold triggers autoscaling for LumenWorker?",
+    "answer": "70%",
+    "source_doc_id": "DOC_029",
+    "title": "LumenWorker Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does LumenWorker autoscale?",
+      "What is the autoscaling threshold for LumenWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0112",
+    "query": "What is the rollback window for LumenWorker?",
+    "answer": "5 minutes",
+    "source_doc_id": "DOC_029",
+    "title": "LumenWorker Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for LumenWorker?",
+      "Within what window can LumenWorker roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0113",
+    "query": "What is the default replica count for ZephyrGateway?",
+    "answer": "4",
+    "source_doc_id": "DOC_030",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does ZephyrGateway use by default?",
+      "What replica count is configured for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0114",
+    "query": "What CPU threshold triggers autoscaling for ZephyrGateway?",
+    "answer": "85%",
+    "source_doc_id": "DOC_030",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does ZephyrGateway autoscale?",
+      "What is the autoscaling threshold for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0115",
+    "query": "What is the rollback window for ZephyrGateway?",
+    "answer": "20 minutes",
+    "source_doc_id": "DOC_030",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for ZephyrGateway?",
+      "Within what window can ZephyrGateway roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0116",
+    "query": "What is the default replica count for HeliosAuth?",
+    "answer": "2",
+    "source_doc_id": "DOC_031",
+    "title": "HeliosAuth Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does HeliosAuth use by default?",
+      "What replica count is configured for HeliosAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0117",
+    "query": "What CPU threshold triggers autoscaling for HeliosAuth?",
+    "answer": "90%",
+    "source_doc_id": "DOC_031",
+    "title": "HeliosAuth Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does HeliosAuth autoscale?",
+      "What is the autoscaling threshold for HeliosAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0118",
+    "query": "What is the rollback window for HeliosAuth?",
+    "answer": "5 minutes",
+    "source_doc_id": "DOC_031",
+    "title": "HeliosAuth Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for HeliosAuth?",
+      "Within what window can HeliosAuth roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0119",
+    "query": "What is the default replica count for HarborRouter?",
+    "answer": "3",
+    "source_doc_id": "DOC_032",
+    "title": "HarborRouter Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does HarborRouter use by default?",
+      "What replica count is configured for HarborRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0120",
+    "query": "What CPU threshold triggers autoscaling for HarborRouter?",
+    "answer": "75%",
+    "source_doc_id": "DOC_032",
+    "title": "HarborRouter Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does HarborRouter autoscale?",
+      "What is the autoscaling threshold for HarborRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0121",
+    "query": "What is the rollback window for HarborRouter?",
+    "answer": "5 minutes",
+    "source_doc_id": "DOC_032",
+    "title": "HarborRouter Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for HarborRouter?",
+      "Within what window can HarborRouter roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0122",
+    "query": "What is the default replica count for OrionAuth?",
+    "answer": "4",
+    "source_doc_id": "DOC_033",
+    "title": "OrionAuth Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does OrionAuth use by default?",
+      "What replica count is configured for OrionAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0123",
+    "query": "What CPU threshold triggers autoscaling for OrionAuth?",
+    "answer": "75%",
+    "source_doc_id": "DOC_033",
+    "title": "OrionAuth Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does OrionAuth autoscale?",
+      "What is the autoscaling threshold for OrionAuth?"
+    ]
+  },
+  {
+    "query_id": "Q_0124",
+    "query": "What is the rollback window for OrionAuth?",
+    "answer": "5 minutes",
+    "source_doc_id": "DOC_033",
+    "title": "OrionAuth Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for OrionAuth?",
+      "Within what window can OrionAuth roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0125",
+    "query": "What is the default replica count for ZephyrGateway?",
+    "answer": "5",
+    "source_doc_id": "DOC_034",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does ZephyrGateway use by default?",
+      "What replica count is configured for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0126",
+    "query": "What CPU threshold triggers autoscaling for ZephyrGateway?",
+    "answer": "75%",
+    "source_doc_id": "DOC_034",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does ZephyrGateway autoscale?",
+      "What is the autoscaling threshold for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0127",
+    "query": "What is the rollback window for ZephyrGateway?",
+    "answer": "10 minutes",
+    "source_doc_id": "DOC_034",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for ZephyrGateway?",
+      "Within what window can ZephyrGateway roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0128",
+    "query": "What is the default replica count for ZephyrGateway?",
+    "answer": "5",
+    "source_doc_id": "DOC_035",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "replica_count",
+    "paraphrases": [
+      "How many replicas does ZephyrGateway use by default?",
+      "What replica count is configured for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0129",
+    "query": "What CPU threshold triggers autoscaling for ZephyrGateway?",
+    "answer": "75%",
+    "source_doc_id": "DOC_035",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "autoscaling_threshold",
+    "paraphrases": [
+      "At what CPU usage does ZephyrGateway autoscale?",
+      "What is the autoscaling threshold for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0130",
+    "query": "What is the rollback window for ZephyrGateway?",
+    "answer": "15 minutes",
+    "source_doc_id": "DOC_035",
+    "title": "ZephyrGateway Deployment Configuration",
+    "fact_type": "rollback_window",
+    "paraphrases": [
+      "How long is the rollback window for ZephyrGateway?",
+      "Within what window can ZephyrGateway roll back a failed deployment?"
+    ]
+  },
+  {
+    "query_id": "Q_0131",
+    "query": "What is the alert threshold for ZephyrGateway?",
+    "answer": "75%",
+    "source_doc_id": "DOC_036",
+    "title": "ZephyrGateway Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does ZephyrGateway trigger alerts?",
+      "What threshold is used for alerts in ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0132",
+    "query": "What is the incident ID format for ZephyrGateway?",
+    "answer": "FZW-XXXX",
+    "source_doc_id": "DOC_036",
+    "title": "ZephyrGateway Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for ZephyrGateway?",
+      "What format do incident IDs follow in ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0133",
+    "query": "How often does ZephyrGateway run checks?",
+    "answer": "60 seconds",
+    "source_doc_id": "DOC_036",
+    "title": "ZephyrGateway Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for ZephyrGateway?",
+      "How frequently does monitoring run for ZephyrGateway?"
+    ]
+  },
+  {
+    "query_id": "Q_0134",
+    "query": "What is the alert threshold for AtlasWorker?",
+    "answer": "85%",
+    "source_doc_id": "DOC_037",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does AtlasWorker trigger alerts?",
+      "What threshold is used for alerts in AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0135",
+    "query": "What is the incident ID format for AtlasWorker?",
+    "answer": "GOL-XXXX",
+    "source_doc_id": "DOC_037",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for AtlasWorker?",
+      "What format do incident IDs follow in AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0136",
+    "query": "How often does AtlasWorker run checks?",
+    "answer": "45 seconds",
+    "source_doc_id": "DOC_037",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for AtlasWorker?",
+      "How frequently does monitoring run for AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0137",
+    "query": "What is the alert threshold for SignalCache?",
+    "answer": "75%",
+    "source_doc_id": "DOC_038",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does SignalCache trigger alerts?",
+      "What threshold is used for alerts in SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0138",
+    "query": "What is the incident ID format for SignalCache?",
+    "answer": "VGM-XXXX",
+    "source_doc_id": "DOC_038",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for SignalCache?",
+      "What format do incident IDs follow in SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0139",
+    "query": "How often does SignalCache run checks?",
+    "answer": "30 seconds",
+    "source_doc_id": "DOC_038",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for SignalCache?",
+      "How frequently does monitoring run for SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0140",
+    "query": "What is the alert threshold for SummitRouter?",
+    "answer": "80%",
+    "source_doc_id": "DOC_039",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does SummitRouter trigger alerts?",
+      "What threshold is used for alerts in SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0141",
+    "query": "What is the incident ID format for SummitRouter?",
+    "answer": "UQM-XXXX",
+    "source_doc_id": "DOC_039",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for SummitRouter?",
+      "What format do incident IDs follow in SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0142",
+    "query": "How often does SummitRouter run checks?",
+    "answer": "60 seconds",
+    "source_doc_id": "DOC_039",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for SummitRouter?",
+      "How frequently does monitoring run for SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0143",
+    "query": "What is the alert threshold for SignalCache?",
+    "answer": "80%",
+    "source_doc_id": "DOC_040",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does SignalCache trigger alerts?",
+      "What threshold is used for alerts in SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0144",
+    "query": "What is the incident ID format for SignalCache?",
+    "answer": "DIF-XXXX",
+    "source_doc_id": "DOC_040",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for SignalCache?",
+      "What format do incident IDs follow in SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0145",
+    "query": "How often does SignalCache run checks?",
+    "answer": "30 seconds",
+    "source_doc_id": "DOC_040",
+    "title": "SignalCache Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for SignalCache?",
+      "How frequently does monitoring run for SignalCache?"
+    ]
+  },
+  {
+    "query_id": "Q_0146",
+    "query": "What is the alert threshold for SummitRouter?",
+    "answer": "70%",
+    "source_doc_id": "DOC_041",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does SummitRouter trigger alerts?",
+      "What threshold is used for alerts in SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0147",
+    "query": "What is the incident ID format for SummitRouter?",
+    "answer": "LXZ-XXXX",
+    "source_doc_id": "DOC_041",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for SummitRouter?",
+      "What format do incident IDs follow in SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0148",
+    "query": "How often does SummitRouter run checks?",
+    "answer": "90 seconds",
+    "source_doc_id": "DOC_041",
+    "title": "SummitRouter Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for SummitRouter?",
+      "How frequently does monitoring run for SummitRouter?"
+    ]
+  },
+  {
+    "query_id": "Q_0149",
+    "query": "What is the alert threshold for AtlasWorker?",
+    "answer": "90%",
+    "source_doc_id": "DOC_042",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "alert_threshold",
+    "paraphrases": [
+      "At what CPU usage does AtlasWorker trigger alerts?",
+      "What threshold is used for alerts in AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0150",
+    "query": "What is the incident ID format for AtlasWorker?",
+    "answer": "MSG-XXXX",
+    "source_doc_id": "DOC_042",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "incident_format",
+    "paraphrases": [
+      "How are incidents labeled for AtlasWorker?",
+      "What format do incident IDs follow in AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0151",
+    "query": "How often does AtlasWorker run checks?",
+    "answer": "30 seconds",
+    "source_doc_id": "DOC_042",
+    "title": "AtlasWorker Monitoring Profile",
+    "fact_type": "check_interval",
+    "paraphrases": [
+      "What is the check interval for AtlasWorker?",
+      "How frequently does monitoring run for AtlasWorker?"
+    ]
+  },
+  {
+    "query_id": "Q_0152",
+    "query": "What is the log retention period in the Data Retention Policy?",
+    "answer": "90 days",
+    "source_doc_id": "DOC_043",
+    "title": "Data Retention Policy",
+    "fact_type": "retention",
+    "paraphrases": [
+      "How long are logs retained under the Data Retention Policy?",
+      "What retention window is defined in the Data Retention Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0153",
+    "query": "What is the backup frequency in the Data Retention Policy?",
+    "answer": "every 6 hours",
+    "source_doc_id": "DOC_043",
+    "title": "Data Retention Policy",
+    "fact_type": "backup_frequency",
+    "paraphrases": [
+      "How often are backups created under the Data Retention Policy?",
+      "What backup schedule does the Data Retention Policy specify?"
+    ]
+  },
+  {
+    "query_id": "Q_0154",
+    "query": "What approval threshold is listed in the Data Retention Policy?",
+    "answer": "$3000",
+    "source_doc_id": "DOC_043",
+    "title": "Data Retention Policy",
+    "fact_type": "threshold",
+    "paraphrases": [
+      "Which dollar threshold requires approval in the Data Retention Policy?",
+      "What is the approval limit in the Data Retention Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0155",
+    "query": "What is the log retention period in the Access Review Policy?",
+    "answer": "90 days",
+    "source_doc_id": "DOC_044",
+    "title": "Access Review Policy",
+    "fact_type": "retention",
+    "paraphrases": [
+      "How long are logs retained under the Access Review Policy?",
+      "What retention window is defined in the Access Review Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0156",
+    "query": "What is the backup frequency in the Access Review Policy?",
+    "answer": "every 6 hours",
+    "source_doc_id": "DOC_044",
+    "title": "Access Review Policy",
+    "fact_type": "backup_frequency",
+    "paraphrases": [
+      "How often are backups created under the Access Review Policy?",
+      "What backup schedule does the Access Review Policy specify?"
+    ]
+  },
+  {
+    "query_id": "Q_0157",
+    "query": "What approval threshold is listed in the Access Review Policy?",
+    "answer": "$1500",
+    "source_doc_id": "DOC_044",
+    "title": "Access Review Policy",
+    "fact_type": "threshold",
+    "paraphrases": [
+      "Which dollar threshold requires approval in the Access Review Policy?",
+      "What is the approval limit in the Access Review Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0158",
+    "query": "What is the log retention period in the Incident Escalation Policy?",
+    "answer": "60 days",
+    "source_doc_id": "DOC_045",
+    "title": "Incident Escalation Policy",
+    "fact_type": "retention",
+    "paraphrases": [
+      "How long are logs retained under the Incident Escalation Policy?",
+      "What retention window is defined in the Incident Escalation Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0159",
+    "query": "What is the backup frequency in the Incident Escalation Policy?",
+    "answer": "daily",
+    "source_doc_id": "DOC_045",
+    "title": "Incident Escalation Policy",
+    "fact_type": "backup_frequency",
+    "paraphrases": [
+      "How often are backups created under the Incident Escalation Policy?",
+      "What backup schedule does the Incident Escalation Policy specify?"
+    ]
+  },
+  {
+    "query_id": "Q_0160",
+    "query": "What approval threshold is listed in the Incident Escalation Policy?",
+    "answer": "$2000",
+    "source_doc_id": "DOC_045",
+    "title": "Incident Escalation Policy",
+    "fact_type": "threshold",
+    "paraphrases": [
+      "Which dollar threshold requires approval in the Incident Escalation Policy?",
+      "What is the approval limit in the Incident Escalation Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0161",
+    "query": "What is the log retention period in the Service Backup Policy?",
+    "answer": "60 days",
+    "source_doc_id": "DOC_046",
+    "title": "Service Backup Policy",
+    "fact_type": "retention",
+    "paraphrases": [
+      "How long are logs retained under the Service Backup Policy?",
+      "What retention window is defined in the Service Backup Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0162",
+    "query": "What is the backup frequency in the Service Backup Policy?",
+    "answer": "every 12 hours",
+    "source_doc_id": "DOC_046",
+    "title": "Service Backup Policy",
+    "fact_type": "backup_frequency",
+    "paraphrases": [
+      "How often are backups created under the Service Backup Policy?",
+      "What backup schedule does the Service Backup Policy specify?"
+    ]
+  },
+  {
+    "query_id": "Q_0163",
+    "query": "What approval threshold is listed in the Service Backup Policy?",
+    "answer": "$1000",
+    "source_doc_id": "DOC_046",
+    "title": "Service Backup Policy",
+    "fact_type": "threshold",
+    "paraphrases": [
+      "Which dollar threshold requires approval in the Service Backup Policy?",
+      "What is the approval limit in the Service Backup Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0164",
+    "query": "What is the log retention period in the Credential Rotation Policy?",
+    "answer": "45 days",
+    "source_doc_id": "DOC_047",
+    "title": "Credential Rotation Policy",
+    "fact_type": "retention",
+    "paraphrases": [
+      "How long are logs retained under the Credential Rotation Policy?",
+      "What retention window is defined in the Credential Rotation Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0165",
+    "query": "What is the backup frequency in the Credential Rotation Policy?",
+    "answer": "daily",
+    "source_doc_id": "DOC_047",
+    "title": "Credential Rotation Policy",
+    "fact_type": "backup_frequency",
+    "paraphrases": [
+      "How often are backups created under the Credential Rotation Policy?",
+      "What backup schedule does the Credential Rotation Policy specify?"
+    ]
+  },
+  {
+    "query_id": "Q_0166",
+    "query": "What approval threshold is listed in the Credential Rotation Policy?",
+    "answer": "$2000",
+    "source_doc_id": "DOC_047",
+    "title": "Credential Rotation Policy",
+    "fact_type": "threshold",
+    "paraphrases": [
+      "Which dollar threshold requires approval in the Credential Rotation Policy?",
+      "What is the approval limit in the Credential Rotation Policy?"
+    ]
+  },
+  {
+    "query_id": "Q_0167",
+    "query": "What action should engineers take first in the SummitRouter incident runbook?",
+    "answer": "fail over to the backup region",
+    "source_doc_id": "DOC_048",
+    "title": "SummitRouter Incident Runbook",
+    "fact_type": "primary_action",
+    "paraphrases": [
+      "What is the primary response action for SummitRouter incidents?",
+      "What does the SummitRouter runbook say to do first?"
+    ]
+  },
+  {
+    "query_id": "Q_0168",
+    "query": "What fallback region is listed in the SummitRouter incident runbook?",
+    "answer": "eu-west-2",
+    "source_doc_id": "DOC_048",
+    "title": "SummitRouter Incident Runbook",
+    "fact_type": "fallback_region",
+    "paraphrases": [
+      "Which fallback region is documented for SummitRouter?",
+      "Where should traffic be shifted for SummitRouter if recovery fails?"
+    ]
+  },
+  {
+    "query_id": "Q_0169",
+    "query": "What trigger threshold is used in the SummitRouter runbook?",
+    "answer": "85%",
+    "source_doc_id": "DOC_048",
+    "title": "SummitRouter Incident Runbook",
+    "fact_type": "trigger_threshold",
+    "paraphrases": [
+      "At what threshold does the SummitRouter runbook activate?",
+      "What CPU threshold is tied to the SummitRouter runbook?"
+    ]
+  },
+  {
+    "query_id": "Q_0170",
+    "query": "What action should engineers take first in the VectorAuth incident runbook?",
+    "answer": "invalidate active tokens",
+    "source_doc_id": "DOC_049",
+    "title": "VectorAuth Incident Runbook",
+    "fact_type": "primary_action",
+    "paraphrases": [
+      "What is the primary response action for VectorAuth incidents?",
+      "What does the VectorAuth runbook say to do first?"
+    ]
+  },
+  {
+    "query_id": "Q_0171",
+    "query": "What fallback region is listed in the VectorAuth incident runbook?",
+    "answer": "ap-south-1",
+    "source_doc_id": "DOC_049",
+    "title": "VectorAuth Incident Runbook",
+    "fact_type": "fallback_region",
+    "paraphrases": [
+      "Which fallback region is documented for VectorAuth?",
+      "Where should traffic be shifted for VectorAuth if recovery fails?"
+    ]
+  },
+  {
+    "query_id": "Q_0172",
+    "query": "What trigger threshold is used in the VectorAuth runbook?",
+    "answer": "70%",
+    "source_doc_id": "DOC_049",
+    "title": "VectorAuth Incident Runbook",
+    "fact_type": "trigger_threshold",
+    "paraphrases": [
+      "At what threshold does the VectorAuth runbook activate?",
+      "What CPU threshold is tied to the VectorAuth runbook?"
+    ]
+  },
+  {
+    "query_id": "Q_0173",
+    "query": "What action should engineers take first in the VectorSync incident runbook?",
+    "answer": "rotate the service key",
+    "source_doc_id": "DOC_050",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "primary_action",
+    "paraphrases": [
+      "What is the primary response action for VectorSync incidents?",
+      "What does the VectorSync runbook say to do first?"
+    ]
+  },
+  {
+    "query_id": "Q_0174",
+    "query": "What fallback region is listed in the VectorSync incident runbook?",
+    "answer": "us-central-1",
+    "source_doc_id": "DOC_050",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "fallback_region",
+    "paraphrases": [
+      "Which fallback region is documented for VectorSync?",
+      "Where should traffic be shifted for VectorSync if recovery fails?"
+    ]
+  },
+  {
+    "query_id": "Q_0175",
+    "query": "What trigger threshold is used in the VectorSync runbook?",
+    "answer": "75%",
+    "source_doc_id": "DOC_050",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "trigger_threshold",
+    "paraphrases": [
+      "At what threshold does the VectorSync runbook activate?",
+      "What CPU threshold is tied to the VectorSync runbook?"
+    ]
+  },
+  {
+    "query_id": "Q_0176",
+    "query": "What action should engineers take first in the SignalCache incident runbook?",
+    "answer": "scale replicas to 5",
+    "source_doc_id": "DOC_051",
+    "title": "SignalCache Incident Runbook",
+    "fact_type": "primary_action",
+    "paraphrases": [
+      "What is the primary response action for SignalCache incidents?",
+      "What does the SignalCache runbook say to do first?"
+    ]
+  },
+  {
+    "query_id": "Q_0177",
+    "query": "What fallback region is listed in the SignalCache incident runbook?",
+    "answer": "eu-west-2",
+    "source_doc_id": "DOC_051",
+    "title": "SignalCache Incident Runbook",
+    "fact_type": "fallback_region",
+    "paraphrases": [
+      "Which fallback region is documented for SignalCache?",
+      "Where should traffic be shifted for SignalCache if recovery fails?"
+    ]
+  },
+  {
+    "query_id": "Q_0178",
+    "query": "What trigger threshold is used in the SignalCache runbook?",
+    "answer": "85%",
+    "source_doc_id": "DOC_051",
+    "title": "SignalCache Incident Runbook",
+    "fact_type": "trigger_threshold",
+    "paraphrases": [
+      "At what threshold does the SignalCache runbook activate?",
+      "What CPU threshold is tied to the SignalCache runbook?"
+    ]
+  },
+  {
+    "query_id": "Q_0179",
+    "query": "What action should engineers take first in the VectorSync incident runbook?",
+    "answer": "pause external writes",
+    "source_doc_id": "DOC_052",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "primary_action",
+    "paraphrases": [
+      "What is the primary response action for VectorSync incidents?",
+      "What does the VectorSync runbook say to do first?"
+    ]
+  },
+  {
+    "query_id": "Q_0180",
+    "query": "What fallback region is listed in the VectorSync incident runbook?",
+    "answer": "us-east-2",
+    "source_doc_id": "DOC_052",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "fallback_region",
+    "paraphrases": [
+      "Which fallback region is documented for VectorSync?",
+      "Where should traffic be shifted for VectorSync if recovery fails?"
+    ]
+  },
+  {
+    "query_id": "Q_0181",
+    "query": "What trigger threshold is used in the VectorSync runbook?",
+    "answer": "70%",
+    "source_doc_id": "DOC_052",
+    "title": "VectorSync Incident Runbook",
+    "fact_type": "trigger_threshold",
+    "paraphrases": [
+      "At what threshold does the VectorSync runbook activate?",
+      "What CPU threshold is tied to the VectorSync runbook?"
+    ]
+  }
+]

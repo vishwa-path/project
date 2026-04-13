@@ -1,0 +1,35 @@
+{
+  "by_attack_type": {
+    "retrieval_targeted": {
+      "num_queries_where_targeted_poison_was_retrieved": 18,
+      "poison_top1_within_retrieved": 0.8333333333333334,
+      "expected_bad_answer_rate_within_retrieved": 0.2222222222222222,
+      "marker_leakage_rate_within_retrieved": 0.0,
+      "accuracy_within_retrieved": 0.1111111111111111,
+      "degraded_from_clean_correct_rate_within_retrieved": 0.3333333333333333,
+      "eligible_clean_correct_queries": 3
+    },
+    "content_manipulation": {
+      "num_queries_where_targeted_poison_was_retrieved": 2,
+      "poison_top1_within_retrieved": 1.0,
+      "expected_bad_answer_rate_within_retrieved": 0.0,
+      "marker_leakage_rate_within_retrieved": 0.0,
+      "accuracy_within_retrieved": 0.0,
+      "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+      "eligible_clean_correct_queries": 0
+    },
+    "instruction_injection": {
+      "num_queries_where_targeted_poison_was_retrieved": 4,
+      "poison_top1_within_retrieved": 0.5,
+      "expected_bad_answer_rate_within_retrieved": 0.25,
+      "marker_leakage_rate_within_retrieved": 0.0,
+      "accuracy_within_retrieved": 0.0,
+      "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+      "eligible_clean_correct_queries": 0
+    }
+  },
+  "overall_context": {
+    "queries_with_no_targeted_poison_retrieved": 157,
+    "accuracy_when_no_targeted_poison_retrieved": 0.7579617834394905
+  }
+}
