@@ -87,7 +87,7 @@ class RAGPipeline:
                 "text": chunk["text"],
             })
         return results
-
+    
     def build_prompt(self, query: str, retrieved_chunks: List[Dict[str, Any]]) -> str:
         context_parts = []
         for i, chunk in enumerate(retrieved_chunks, start=1):
