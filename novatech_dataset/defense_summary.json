@@ -1,27 +1,32 @@
 {
-  "total_clean_docs": 52,
-  "total_poisoned_docs": 72,
+  "total_clean_docs": 500,
+  "total_poisoned_docs": 1000,
   "accepted_poisoned_docs": 0,
-  "rejected_poisoned_docs": 72,
+  "rejected_poisoned_docs": 1000,
   "defense_stats": {
-    "instruction_injection_defense": 72,
-    "content_manipulation_defense": 69,
-    "retrieval_targeting_defense": 24
+    "instruction_injection_defense": 1000,
+    "content_manipulation_defense": 984,
+    "retrieval_targeting_defense": 250
   },
   "attack_type_stats": {
     "instruction_injection": {
-      "total": 24,
-      "rejected": 24,
+      "total": 250,
+      "rejected": 250,
       "accepted": 0
     },
     "retrieval_targeted": {
-      "total": 24,
-      "rejected": 24,
+      "total": 250,
+      "rejected": 250,
       "accepted": 0
     },
     "content_manipulation": {
-      "total": 24,
-      "rejected": 24,
+      "total": 250,
+      "rejected": 250,
+      "accepted": 0
+    },
+    "semantic_poison": {
+      "total": 250,
+      "rejected": 250,
       "accepted": 0
     }
   }

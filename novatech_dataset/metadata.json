@@ -1,14 +1,23 @@
 {
   "company": "NovaTech Systems",
-  "num_clean_docs": 52,
-  "num_single_hop_queries": 181,
-  "num_multi_hop_queries": 20,
-  "num_poisoned_docs": 72,
+  "seed": 1,
+  "num_clean_docs": 500,
+  "num_single_hop_queries": 2000,
+  "num_multi_hop_queries": 300,
+  "total_queries": 2300,
+  "num_poisoned_docs": 1000,
   "attack_types": [
     "instruction_injection",
     "retrieval_targeted",
-    "content_manipulation"
+    "content_manipulation",
+    "semantic_poison"
   ],
+  "attack_type_counts": {
+    "instruction_injection": 250,
+    "retrieval_targeted": 250,
+    "content_manipulation": 250,
+    "semantic_poison": 250
+  },
   "doc_categories": [
     "service_doc",
     "api_doc",
@@ -17,5 +26,19 @@
     "policy_doc",
     "runbook_doc"
   ],
+  "category_counts": {
+    "service_doc": 145,
+    "api_doc": 96,
+    "deployment_doc": 96,
+    "monitoring_doc": 67,
+    "policy_doc": 48,
+    "runbook_doc": 48
+  },
+  "dataset_version": "v2_scaled_config_driven",
+  "generation_method": "synthetic_programmatic",
+  "experiment_tracking": {
+    "uses_experiment_config": true,
+    "config_file": "experiment_config.json"
+  },
   "notes": "Synthetic internal tech-company dataset designed for RAG poisoning and defense experiments."
 }

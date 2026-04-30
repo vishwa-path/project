@@ -1,0 +1,24 @@
+{
+  "company": "NovaTech Systems",
+  "seed": 42,
+  "num_services": 100,
+  "num_clean_docs": 500,
+  "num_single_hop_queries": 2000,
+  "num_multi_hop_queries": 300,
+  "num_poisoned_docs": 1000,
+  "top_k": 5,
+  "attack_types": [
+    "instruction_injection",
+    "retrieval_targeted",
+    "content_manipulation",
+    "semantic_poison"
+  ],
+  "doc_categories": [
+    "service_doc",
+    "api_doc",
+    "deployment_doc",
+    "monitoring_doc",
+    "policy_doc",
+    "runbook_doc"
+  ]
+}

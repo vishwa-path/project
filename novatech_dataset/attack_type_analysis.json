@@ -1,35 +1,425 @@
 {
-  "by_attack_type": {
-    "retrieval_targeted": {
-      "num_queries_where_targeted_poison_was_retrieved": 18,
-      "poison_top1_within_retrieved": 0.8333333333333334,
-      "expected_bad_answer_rate_within_retrieved": 0.2222222222222222,
-      "marker_leakage_rate_within_retrieved": 0.0,
-      "accuracy_within_retrieved": 0.1111111111111111,
-      "degraded_from_clean_correct_rate_within_retrieved": 0.3333333333333333,
-      "eligible_clean_correct_queries": 3
+  "baseline": {
+    "overall": {
+      "total_queries": 2000,
+      "accuracy": 0.2615,
+      "baseline_accuracy_available_in_rows": 0.2615,
+      "error_rate": 0.7385,
+      "poison_retrieval_rate": 0.8005,
+      "poison_top1_rate": 0.575,
+      "marker_leakage_rate": 0.1785,
+      "bad_answer_rate": 0.7385,
+      "degraded_from_clean_correct_rate": 0.0,
+      "attack_success_rate_given_poison_retrieved": 0.8126171143035603,
+      "attack_success_count": 1301,
+      "poison_retrieval_count": 1601,
+      "answer_correct_count": 523,
+      "accuracy_drop_vs_baseline": 0.0,
+      "asr_reduction_vs_poisoned": -0.4889656620214026,
+      "defense_utility_score": -0.5511171143035603
     },
-    "content_manipulation": {
-      "num_queries_where_targeted_poison_was_retrieved": 2,
-      "poison_top1_within_retrieved": 1.0,
-      "expected_bad_answer_rate_within_retrieved": 0.0,
-      "marker_leakage_rate_within_retrieved": 0.0,
-      "accuracy_within_retrieved": 0.0,
-      "degraded_from_clean_correct_rate_within_retrieved": 0.0,
-      "eligible_clean_correct_queries": 0
+    "by_attack_type": {
+      "semantic_poison": {
+        "num_queries_where_attack_type_appeared": 1116,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.7768817204301075,
+        "expected_bad_answer_rate_within_retrieved": 0.8207885304659498,
+        "marker_leakage_rate_within_retrieved": 0.22311827956989247,
+        "accuracy_within_retrieved": 0.17921146953405018,
+        "attack_success_rate_given_poison_retrieved": 0.8207885304659498,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 200
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 364,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.9505494505494505,
+        "expected_bad_answer_rate_within_retrieved": 0.9642857142857143,
+        "marker_leakage_rate_within_retrieved": 0.13186813186813187,
+        "accuracy_within_retrieved": 0.03571428571428571,
+        "attack_success_rate_given_poison_retrieved": 0.9642857142857143,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 13
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 459,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.9411764705882353,
+        "expected_bad_answer_rate_within_retrieved": 0.9564270152505446,
+        "marker_leakage_rate_within_retrieved": 0.15904139433551198,
+        "accuracy_within_retrieved": 0.04357298474945534,
+        "attack_success_rate_given_poison_retrieved": 0.9564270152505446,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 20
+      },
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 997,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.7151454363089268,
+        "expected_bad_answer_rate_within_retrieved": 0.8094282848545636,
+        "marker_leakage_rate_within_retrieved": 0.3299899699097292,
+        "accuracy_within_retrieved": 0.1905717151454363,
+        "attack_success_rate_given_poison_retrieved": 0.8094282848545636,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 190
+      }
     },
-    "instruction_injection": {
-      "num_queries_where_targeted_poison_was_retrieved": 4,
-      "poison_top1_within_retrieved": 0.5,
-      "expected_bad_answer_rate_within_retrieved": 0.25,
-      "marker_leakage_rate_within_retrieved": 0.0,
-      "accuracy_within_retrieved": 0.0,
-      "degraded_from_clean_correct_rate_within_retrieved": 0.0,
-      "eligible_clean_correct_queries": 0
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 399,
+      "accuracy_when_no_targeted_poison_retrieved": 0.5588972431077694
     }
   },
-  "overall_context": {
-    "queries_with_no_targeted_poison_retrieved": 157,
-    "accuracy_when_no_targeted_poison_retrieved": 0.7579617834394905
+  "poisoned": {
+    "overall": {
+      "total_queries": 2000,
+      "accuracy": 0.2485,
+      "baseline_accuracy_available_in_rows": 0.2615,
+      "error_rate": 0.7515,
+      "poison_retrieval_rate": 0.1205,
+      "poison_top1_rate": 0.1,
+      "marker_leakage_rate": 0.0105,
+      "bad_answer_rate": 0.039,
+      "degraded_from_clean_correct_rate": 0.05927342256214149,
+      "attack_success_rate_given_poison_retrieved": 0.3236514522821577,
+      "attack_success_count": 78,
+      "poison_retrieval_count": 241,
+      "answer_correct_count": 497,
+      "accuracy_drop_vs_baseline": 0.013000000000000012,
+      "asr_reduction_vs_poisoned": 0.0,
+      "defense_utility_score": -0.0751514522821577
+    },
+    "by_attack_type": {
+      "semantic_poison": {
+        "num_queries_where_attack_type_appeared": 1116,
+        "poison_retrieval_rate": 0.15053763440860216,
+        "poison_top1_within_retrieved": 0.12813620071684587,
+        "expected_bad_answer_rate_within_retrieved": 0.0456989247311828,
+        "marker_leakage_rate_within_retrieved": 0.010752688172043012,
+        "accuracy_within_retrieved": 0.17025089605734767,
+        "attack_success_rate_given_poison_retrieved": 0.30357142857142855,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.05,
+        "eligible_clean_correct_queries": 200
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 364,
+        "poison_retrieval_rate": 0.1510989010989011,
+        "poison_top1_within_retrieved": 0.14560439560439561,
+        "expected_bad_answer_rate_within_retrieved": 0.03571428571428571,
+        "marker_leakage_rate_within_retrieved": 0.0027472527472527475,
+        "accuracy_within_retrieved": 0.03296703296703297,
+        "attack_success_rate_given_poison_retrieved": 0.23636363636363636,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.07692307692307693,
+        "eligible_clean_correct_queries": 13
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 459,
+        "poison_retrieval_rate": 0.1655773420479303,
+        "poison_top1_within_retrieved": 0.1568627450980392,
+        "expected_bad_answer_rate_within_retrieved": 0.06100217864923747,
+        "marker_leakage_rate_within_retrieved": 0.017429193899782137,
+        "accuracy_within_retrieved": 0.0457516339869281,
+        "attack_success_rate_given_poison_retrieved": 0.3684210526315789,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 20
+      },
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 997,
+        "poison_retrieval_rate": 0.18856569709127383,
+        "poison_top1_within_retrieved": 0.15747241725175526,
+        "expected_bad_answer_rate_within_retrieved": 0.06619859578736209,
+        "marker_leakage_rate_within_retrieved": 0.02106318956870612,
+        "accuracy_within_retrieved": 0.18254764292878636,
+        "attack_success_rate_given_poison_retrieved": 0.35106382978723405,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.05789473684210526,
+        "eligible_clean_correct_queries": 190
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 399,
+      "accuracy_when_no_targeted_poison_retrieved": 0.5288220551378446
+    }
+  },
+  "defended": {
+    "overall": {
+      "total_queries": 2000,
+      "accuracy": 0.575,
+      "baseline_accuracy_available_in_rows": 0.2615,
+      "error_rate": 0.425,
+      "poison_retrieval_rate": 0.0,
+      "poison_top1_rate": 0.0,
+      "marker_leakage_rate": 0.0,
+      "bad_answer_rate": 0.0,
+      "degraded_from_clean_correct_rate": 0.19120458891013384,
+      "attack_success_rate_given_poison_retrieved": 0.0,
+      "attack_success_count": 0,
+      "poison_retrieval_count": 0,
+      "answer_correct_count": 1150,
+      "accuracy_drop_vs_baseline": -0.31349999999999995,
+      "asr_reduction_vs_poisoned": 0.3236514522821577,
+      "defense_utility_score": 0.575
+    },
+    "by_attack_type": {},
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 2000,
+      "accuracy_when_no_targeted_poison_retrieved": 0.575
+    }
+  },
+  "context_sanitized": {
+    "overall": {
+      "total_queries": 2000,
+      "accuracy": 0.298,
+      "baseline_accuracy_available_in_rows": 0.2615,
+      "error_rate": 0.702,
+      "poison_retrieval_rate": 0.1205,
+      "poison_top1_rate": 0.1,
+      "marker_leakage_rate": 0.0,
+      "bad_answer_rate": 0.03,
+      "degraded_from_clean_correct_rate": 0.06500956022944551,
+      "attack_success_rate_given_poison_retrieved": 0.24896265560165975,
+      "attack_success_count": 60,
+      "poison_retrieval_count": 241,
+      "answer_correct_count": 596,
+      "accuracy_drop_vs_baseline": -0.03649999999999998,
+      "asr_reduction_vs_poisoned": 0.07468879668049794,
+      "defense_utility_score": 0.04903734439834023
+    },
+    "by_attack_type": {
+      "semantic_poison": {
+        "num_queries_where_attack_type_appeared": 1116,
+        "poison_retrieval_rate": 0.15053763440860216,
+        "poison_top1_within_retrieved": 0.12813620071684587,
+        "expected_bad_answer_rate_within_retrieved": 0.036738351254480286,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.22939068100358423,
+        "attack_success_rate_given_poison_retrieved": 0.24404761904761904,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.025,
+        "eligible_clean_correct_queries": 200
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 364,
+        "poison_retrieval_rate": 0.1510989010989011,
+        "poison_top1_within_retrieved": 0.14560439560439561,
+        "expected_bad_answer_rate_within_retrieved": 0.03296703296703297,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.0521978021978022,
+        "attack_success_rate_given_poison_retrieved": 0.21818181818181817,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 13
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 459,
+        "poison_retrieval_rate": 0.1655773420479303,
+        "poison_top1_within_retrieved": 0.1568627450980392,
+        "expected_bad_answer_rate_within_retrieved": 0.04357298474945534,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.054466230936819175,
+        "attack_success_rate_given_poison_retrieved": 0.2631578947368421,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 20
+      },
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 997,
+        "poison_retrieval_rate": 0.18856569709127383,
+        "poison_top1_within_retrieved": 0.15747241725175526,
+        "expected_bad_answer_rate_within_retrieved": 0.048144433299899696,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.2678034102306921,
+        "attack_success_rate_given_poison_retrieved": 0.2553191489361702,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.04736842105263158,
+        "eligible_clean_correct_queries": 190
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 399,
+      "accuracy_when_no_targeted_poison_retrieved": 0.5137844611528822
+    }
+  },
+  "post_generation_defense": {
+    "overall": {
+      "total_queries": 2000,
+      "accuracy": 0.958,
+      "baseline_accuracy_available_in_rows": 0.2615,
+      "error_rate": 0.042,
+      "poison_retrieval_rate": 0.1205,
+      "poison_top1_rate": 0.1,
+      "marker_leakage_rate": 0.0,
+      "bad_answer_rate": 0.004,
+      "degraded_from_clean_correct_rate": 0.0,
+      "attack_success_rate_given_poison_retrieved": 0.03319502074688797,
+      "attack_success_count": 8,
+      "poison_retrieval_count": 241,
+      "answer_correct_count": 1916,
+      "accuracy_drop_vs_baseline": -0.6964999999999999,
+      "asr_reduction_vs_poisoned": 0.29045643153526973,
+      "defense_utility_score": 0.924804979253112
+    },
+    "by_attack_type": {
+      "semantic_poison": {
+        "num_queries_where_attack_type_appeared": 1116,
+        "poison_retrieval_rate": 0.15053763440860216,
+        "poison_top1_within_retrieved": 0.12813620071684587,
+        "expected_bad_answer_rate_within_retrieved": 0.007168458781362007,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.9453405017921147,
+        "attack_success_rate_given_poison_retrieved": 0.047619047619047616,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 200
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 364,
+        "poison_retrieval_rate": 0.1510989010989011,
+        "poison_top1_within_retrieved": 0.14560439560439561,
+        "expected_bad_answer_rate_within_retrieved": 0.01098901098901099,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.9368131868131868,
+        "attack_success_rate_given_poison_retrieved": 0.07272727272727272,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 13
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 459,
+        "poison_retrieval_rate": 0.1655773420479303,
+        "poison_top1_within_retrieved": 0.1568627450980392,
+        "expected_bad_answer_rate_within_retrieved": 0.015250544662309368,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.9215686274509803,
+        "attack_success_rate_given_poison_retrieved": 0.09210526315789473,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 20
+      },
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 997,
+        "poison_retrieval_rate": 0.18856569709127383,
+        "poison_top1_within_retrieved": 0.15747241725175526,
+        "expected_bad_answer_rate_within_retrieved": 0.0010030090270812437,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.9628886659979939,
+        "attack_success_rate_given_poison_retrieved": 0.005319148936170213,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 190
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 399,
+      "accuracy_when_no_targeted_poison_retrieved": 0.9799498746867168
+    }
+  },
+  "human_in_loop": {
+    "overall": {
+      "total_queries": 181,
+      "accuracy": 1.0,
+      "baseline_accuracy_available_in_rows": 0.6685082872928176,
+      "error_rate": 0.0,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "bad_answer_rate": 0.0,
+      "degraded_from_clean_correct_rate": 0.0,
+      "attack_success_rate_given_poison_retrieved": 0.0,
+      "attack_success_count": 0,
+      "poison_retrieval_count": 24,
+      "answer_correct_count": 181,
+      "accuracy_drop_vs_baseline": -0.7384999999999999,
+      "asr_reduction_vs_poisoned": 0.3236514522821577,
+      "defense_utility_score": 1.0
+    },
+    "by_attack_type": {
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 18,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.8333333333333334,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 1.0,
+        "attack_success_rate_given_poison_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 3
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 2,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 1.0,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 1.0,
+        "attack_success_rate_given_poison_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 4,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.5,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 1.0,
+        "attack_success_rate_given_poison_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 157,
+      "accuracy_when_no_targeted_poison_retrieved": 1.0
+    }
+  },
+  "manual_human_review": {
+    "overall": {
+      "total_queries": 181,
+      "accuracy": 0.7845303867403315,
+      "baseline_accuracy_available_in_rows": 0.6685082872928176,
+      "error_rate": 0.2154696132596685,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "bad_answer_rate": 0.011049723756906077,
+      "degraded_from_clean_correct_rate": 0.01652892561983471,
+      "attack_success_rate_given_poison_retrieved": 0.08333333333333333,
+      "attack_success_count": 2,
+      "poison_retrieval_count": 24,
+      "answer_correct_count": 142,
+      "accuracy_drop_vs_baseline": -0.5230303867403314,
+      "asr_reduction_vs_poisoned": 0.24031811894882438,
+      "defense_utility_score": 0.7011970534069981
+    },
+    "by_attack_type": {
+      "retrieval_targeted": {
+        "num_queries_where_attack_type_appeared": 18,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.8333333333333334,
+        "expected_bad_answer_rate_within_retrieved": 0.1111111111111111,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.6666666666666666,
+        "attack_success_rate_given_poison_retrieved": 0.1111111111111111,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 3
+      },
+      "content_manipulation": {
+        "num_queries_where_attack_type_appeared": 2,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 1.0,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 1.0,
+        "attack_success_rate_given_poison_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      },
+      "instruction_injection": {
+        "num_queries_where_attack_type_appeared": 4,
+        "poison_retrieval_rate": 1.0,
+        "poison_top1_within_retrieved": 0.5,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.5,
+        "attack_success_rate_given_poison_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 157,
+      "accuracy_when_no_targeted_poison_retrieved": 0.802547770700637
+    }
   }
 }

@@ -1,107 +1,108 @@
 [
   {
     "query_id": "MQ_0001",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format FZW-XXXX?",
-    "answer": "Infra",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
     "source_doc_ids": [
       "DOC_001",
-      "DOC_036"
+      "DOC_338"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0002",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format GOL-XXXX?",
-    "answer": "Messaging",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
     "source_doc_ids": [
       "DOC_002",
-      "DOC_037"
+      "DOC_339"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0003",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format VGM-XXXX?",
-    "answer": "Compliance",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
     "source_doc_ids": [
       "DOC_003",
-      "DOC_038"
+      "DOC_340"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0004",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format UQM-XXXX?",
-    "answer": "HR",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
     "source_doc_ids": [
       "DOC_004",
-      "DOC_039"
+      "DOC_341"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0005",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format DIF-XXXX?",
-    "answer": "Data",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
     "source_doc_ids": [
       "DOC_005",
-      "DOC_040"
+      "DOC_342"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0006",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format LXZ-XXXX?",
-    "answer": "Monitoring",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
     "source_doc_ids": [
       "DOC_006",
-      "DOC_041"
+      "DOC_343"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0007",
-    "query": "Which team owns the service whose monitoring profile uses incident ID format MSG-XXXX?",
-    "answer": "Infra",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
     "source_doc_ids": [
       "DOC_007",
-      "DOC_042"
+      "DOC_344"
     ],
     "query_type": "multi_hop",
     "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0008",
-    "query": "What cluster region is used by the system whose rollback window is 15 minutes?",
-    "answer": "us-central-1",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
     "source_doc_ids": [
-      "DOC_026"
+      "DOC_008",
+      "DOC_345"
     ],
     "query_type": "multi_hop",
-    "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
+    "rationale": "Need monitoring doc for incident format and service doc for owning team."
   },
   {
     "query_id": "MQ_0009",
-    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
     "answer": "eu-west-1",
     "source_doc_ids": [
-      "DOC_027"
+      "DOC_242"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0010",
-    "query": "What cluster region is used by the system whose rollback window is 15 minutes?",
-    "answer": "ap-south-1",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
     "source_doc_ids": [
-      "DOC_028"
+      "DOC_243"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
@@ -109,9 +110,9 @@
   {
     "query_id": "MQ_0011",
     "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
-    "answer": "eu-west-1",
+    "answer": "eu-west-2",
     "source_doc_ids": [
-      "DOC_029"
+      "DOC_244"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
@@ -121,57 +122,57 @@
     "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
     "answer": "us-east-2",
     "source_doc_ids": [
-      "DOC_030"
+      "DOC_245"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0013",
-    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
-    "answer": "us-east-2",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
     "source_doc_ids": [
-      "DOC_031"
+      "DOC_246"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0014",
-    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
-    "answer": "eu-west-2",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
     "source_doc_ids": [
-      "DOC_032"
+      "DOC_247"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0015",
-    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
     "answer": "us-east-2",
     "source_doc_ids": [
-      "DOC_033"
+      "DOC_248"
     ],
     "query_type": "multi_hop",
     "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0016",
-    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
-    "answer": "VaultStore",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
     "source_doc_ids": [
-      "DOC_043"
+      "DOC_249"
     ],
     "query_type": "multi_hop",
-    "rationale": "Policy doc links approval threshold to archive storage."
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc."
   },
   {
     "query_id": "MQ_0017",
     "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
     "answer": "ColdArchive",
     "source_doc_ids": [
-      "DOC_044"
+      "DOC_405"
     ],
     "query_type": "multi_hop",
     "rationale": "Policy doc links approval threshold to archive storage."
@@ -179,31 +180,3213 @@
   {
     "query_id": "MQ_0018",
     "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
-    "answer": "ColdArchive",
+    "answer": "Glacier-X",
     "source_doc_ids": [
-      "DOC_045"
+      "DOC_406"
     ],
     "query_type": "multi_hop",
     "rationale": "Policy doc links approval threshold to archive storage."
   },
   {
     "query_id": "MQ_0019",
-    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
     "answer": "DeltaFreeze",
     "source_doc_ids": [
-      "DOC_046"
+      "DOC_407"
     ],
     "query_type": "multi_hop",
     "rationale": "Policy doc links approval threshold to archive storage."
   },
   {
     "query_id": "MQ_0020",
-    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
-    "answer": "Glacier-X",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
     "source_doc_ids": [
-      "DOC_047"
+      "DOC_408"
     ],
     "query_type": "multi_hop",
     "rationale": "Policy doc links approval threshold to archive storage."
+  },
+  {
+    "query_id": "MQ_0021",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage."
+  },
+  {
+    "query_id": "MQ_0022",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage."
+  },
+  {
+    "query_id": "MQ_0023",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0024",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0025",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0026",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0027",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0028",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0029",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0030",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0031",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0032",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0033",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0034",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0035",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0036",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0037",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0038",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0039",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0040",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0041",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0042",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0043",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0044",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0045",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0046",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0047",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0048",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0049",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0050",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0051",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0052",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0053",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0054",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0055",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0056",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0057",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0058",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0059",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0060",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0061",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0062",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0063",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0064",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0065",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0066",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0067",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0068",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0069",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0070",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0071",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0072",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0073",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0074",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0075",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0076",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0077",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0078",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0079",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0080",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0081",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0082",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0083",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0084",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0085",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0086",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0087",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0088",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0089",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0090",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0091",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0092",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0093",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0094",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0095",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0096",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0097",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0098",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0099",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0100",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0101",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0102",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0103",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0104",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0105",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0106",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0107",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0108",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0109",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0110",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0111",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0112",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0113",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0114",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0115",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0116",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0117",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0118",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0119",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0120",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0121",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0122",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0123",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0124",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0125",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0126",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0127",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0128",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0129",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0130",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0131",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0132",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0133",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0134",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0135",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0136",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0137",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0138",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0139",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0140",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0141",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0142",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0143",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0144",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0145",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0146",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0147",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0148",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0149",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0150",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0151",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0152",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0153",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0154",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0155",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0156",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0157",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0158",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0159",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0160",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0161",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0162",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0163",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0164",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0165",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0166",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0167",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0168",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0169",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0170",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0171",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0172",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0173",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0174",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0175",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0176",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0177",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0178",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0179",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0180",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0181",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0182",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0183",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0184",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0185",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0186",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0187",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0188",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0189",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0190",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0191",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0192",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0193",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0194",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0195",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0196",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0197",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0198",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0199",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0200",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0201",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0202",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0203",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0204",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0205",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0206",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0207",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0208",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0209",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0210",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0211",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0212",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0213",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0214",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0215",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0216",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0217",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0218",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0219",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0220",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0221",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0222",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0223",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0224",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0225",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0226",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0227",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0228",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0229",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0230",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0231",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0232",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0233",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0234",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0235",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0236",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0237",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0238",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0239",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0240",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0241",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0242",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0243",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0244",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0245",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0246",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0247",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0248",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0249",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0250",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0251",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0252",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0253",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0254",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0255",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0256",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0257",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0258",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0259",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0260",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0261",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0262",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0263",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0264",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0265",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0266",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0267",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0268",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0269",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0270",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0271",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0272",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0273",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0274",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0275",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0276",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0277",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0278",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0279",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_248"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0280",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_249"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0281",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "ColdArchive",
+    "source_doc_ids": [
+      "DOC_405"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0282",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $2000?",
+    "answer": "Glacier-X",
+    "source_doc_ids": [
+      "DOC_406"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0283",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $500?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_407"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0284",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1000?",
+    "answer": "DeltaFreeze",
+    "source_doc_ids": [
+      "DOC_408"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0285",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $1500?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_409"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0286",
+    "query": "Which archive storage system is used by the policy that has an approval threshold of $3000?",
+    "answer": "VaultStore",
+    "source_doc_ids": [
+      "DOC_410"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Policy doc links approval threshold to archive storage.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0287",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format HIZ-XXXX?",
+    "answer": "Auth",
+    "source_doc_ids": [
+      "DOC_001",
+      "DOC_338"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0288",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format EJA-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_002",
+      "DOC_339"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0289",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format STO-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_003",
+      "DOC_340"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0290",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UUF-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_004",
+      "DOC_341"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0291",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format MZJ-XXXX?",
+    "answer": "Monitoring",
+    "source_doc_ids": [
+      "DOC_005",
+      "DOC_342"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0292",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format RDJ-XXXX?",
+    "answer": "Payments",
+    "source_doc_ids": [
+      "DOC_006",
+      "DOC_343"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0293",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format UYD-XXXX?",
+    "answer": "HR",
+    "source_doc_ids": [
+      "DOC_007",
+      "DOC_344"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0294",
+    "query": "Which team owns the service whose monitoring profile uses incident ID format WPP-XXXX?",
+    "answer": "Platform",
+    "source_doc_ids": [
+      "DOC_008",
+      "DOC_345"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Need monitoring doc for incident format and service doc for owning team.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0295",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_242"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0296",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "eu-west-1",
+    "source_doc_ids": [
+      "DOC_243"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0297",
+    "query": "What cluster region is used by the system whose rollback window is 5 minutes?",
+    "answer": "eu-west-2",
+    "source_doc_ids": [
+      "DOC_244"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0298",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-east-2",
+    "source_doc_ids": [
+      "DOC_245"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0299",
+    "query": "What cluster region is used by the system whose rollback window is 20 minutes?",
+    "answer": "us-central-1",
+    "source_doc_ids": [
+      "DOC_246"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
+  },
+  {
+    "query_id": "MQ_0300",
+    "query": "What cluster region is used by the system whose rollback window is 10 minutes?",
+    "answer": "ap-south-1",
+    "source_doc_ids": [
+      "DOC_247"
+    ],
+    "query_type": "multi_hop",
+    "rationale": "Query references rollback window and asks for cluster region from same deployment doc.",
+    "is_reused_template": true
   }
 ]
