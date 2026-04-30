@@ -1,0 +1,314 @@
+{
+  "dataset_metadata": {
+    "company": "NovaTech Systems",
+    "num_clean_docs": 52,
+    "num_single_hop_queries": 181,
+    "num_multi_hop_queries": 20,
+    "num_poisoned_docs": 72,
+    "attack_types": [
+      "instruction_injection",
+      "retrieval_targeted",
+      "content_manipulation"
+    ],
+    "doc_categories": [
+      "service_doc",
+      "api_doc",
+      "deployment_doc",
+      "monitoring_doc",
+      "policy_doc",
+      "runbook_doc"
+    ],
+    "notes": "Synthetic internal tech-company dataset designed for RAG poisoning and defense experiments."
+  },
+  "baseline": {
+    "file": "baseline_results.json",
+    "num_queries": 181,
+    "answer_accuracy": 0.6685082872928176,
+    "poison_retrieval_rate": 0.0,
+    "poison_top1_rate": 0.0,
+    "attack_success_rate_expected_bad_answer": 0.0,
+    "marker_leakage_rate": 0.0,
+    "degraded_from_clean_correct_rate": 0.0,
+    "original_summary": {
+      "num_queries": 181,
+      "retrieval_hit_rate": 0.9558011049723757,
+      "answer_accuracy": 0.6685082872928176
+    }
+  },
+  "poisoned_no_defense": {
+    "file": "poisoned_results.json",
+    "num_queries": 181,
+    "answer_accuracy": 0.6685082872928176,
+    "poison_retrieval_rate": 0.13259668508287292,
+    "poison_top1_rate": 0.10497237569060773,
+    "attack_success_rate_expected_bad_answer": 0.027624309392265192,
+    "marker_leakage_rate": 0.0,
+    "degraded_from_clean_correct_rate": 0.027624309392265192,
+    "original_summary": {
+      "num_queries": 181,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "expected_bad_answer_rate": 0.027624309392265192,
+      "poisoned_answer_accuracy": 0.6685082872928176,
+      "degraded_from_clean_correct_rate": 0.04132231404958678,
+      "eligible_clean_correct_queries": 121
+    }
+  },
+  "attack_type_analysis_before_defense": {
+    "by_attack_type": {
+      "retrieval_targeted": {
+        "num_queries_where_targeted_poison_was_retrieved": 18,
+        "poison_top1_within_retrieved": 0.8333333333333334,
+        "expected_bad_answer_rate_within_retrieved": 0.2222222222222222,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.1111111111111111,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.3333333333333333,
+        "eligible_clean_correct_queries": 3
+      },
+      "content_manipulation": {
+        "num_queries_where_targeted_poison_was_retrieved": 2,
+        "poison_top1_within_retrieved": 1.0,
+        "expected_bad_answer_rate_within_retrieved": 0.0,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      },
+      "instruction_injection": {
+        "num_queries_where_targeted_poison_was_retrieved": 4,
+        "poison_top1_within_retrieved": 0.5,
+        "expected_bad_answer_rate_within_retrieved": 0.25,
+        "marker_leakage_rate_within_retrieved": 0.0,
+        "accuracy_within_retrieved": 0.0,
+        "degraded_from_clean_correct_rate_within_retrieved": 0.0,
+        "eligible_clean_correct_queries": 0
+      }
+    },
+    "overall_context": {
+      "queries_with_no_targeted_poison_retrieved": 157,
+      "accuracy_when_no_targeted_poison_retrieved": 0.7579617834394905
+    }
+  },
+  "corpus_defense": {
+    "document_filtering": {
+      "raw_defense_summary": {
+        "total_clean_docs": 52,
+        "total_poisoned_docs": 72,
+        "accepted_poisoned_docs": 0,
+        "rejected_poisoned_docs": 72,
+        "defense_stats": {
+          "instruction_injection_defense": 72,
+          "content_manipulation_defense": 69,
+          "retrieval_targeting_defense": 24
+        },
+        "attack_type_stats": {
+          "instruction_injection": {
+            "total": 24,
+            "rejected": 24,
+            "accepted": 0
+          },
+          "retrieval_targeted": {
+            "total": 24,
+            "rejected": 24,
+            "accepted": 0
+          },
+          "content_manipulation": {
+            "total": 24,
+            "rejected": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "per_attack_filtering": {
+        "instruction_injection": {
+          "total_poison_docs": 24,
+          "rejected": 24,
+          "accepted": 0,
+          "rejection_rate": 1.0,
+          "acceptance_rate": 0.0
+        },
+        "retrieval_targeted": {
+          "total_poison_docs": 24,
+          "rejected": 24,
+          "accepted": 0,
+          "rejection_rate": 1.0,
+          "acceptance_rate": 0.0
+        },
+        "content_manipulation": {
+          "total_poison_docs": 24,
+          "rejected": 24,
+          "accepted": 0,
+          "rejection_rate": 1.0,
+          "acceptance_rate": 0.0
+        }
+      }
+    },
+    "rag_after_filtering": {
+      "file": "defended_results.json",
+      "num_queries": 181,
+      "answer_accuracy": 0.7790055248618785,
+      "poison_retrieval_rate": 0.0,
+      "poison_top1_rate": 0.0,
+      "attack_success_rate_expected_bad_answer": 0.0,
+      "marker_leakage_rate": 0.0,
+      "degraded_from_clean_correct_rate": 0.03314917127071823,
+      "original_summary": {
+        "num_queries": 181,
+        "poison_retrieval_rate": 0.0,
+        "poison_top1_rate": 0.0,
+        "marker_leakage_rate": 0.0,
+        "expected_bad_answer_rate": 0.0,
+        "poisoned_answer_accuracy": 0.7790055248618785,
+        "degraded_from_clean_correct_rate": 0.049586776859504134,
+        "eligible_clean_correct_queries": 121
+      }
+    }
+  },
+  "context_sanitization": {
+    "summary": {
+      "num_queries": 181,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "expected_bad_answer_rate": 0.022099447513812154,
+      "context_sanitized_answer_accuracy": 0.7016574585635359,
+      "degraded_from_clean_correct_rate": 0.03305785123966942,
+      "eligible_clean_correct_queries": 121
+    },
+    "by_attack_type_when_retrieved": {
+      "retrieval_targeted": {
+        "total_targeted_retrieved": 18,
+        "poison_top1": 15,
+        "expected_bad_answer_present": 3,
+        "marker_present": 0,
+        "answer_correct": 7,
+        "degraded_from_clean_correct": 0
+      },
+      "content_manipulation": {
+        "total_targeted_retrieved": 2,
+        "poison_top1": 2,
+        "expected_bad_answer_present": 0,
+        "marker_present": 0,
+        "answer_correct": 0,
+        "degraded_from_clean_correct": 0
+      },
+      "instruction_injection": {
+        "total_targeted_retrieved": 4,
+        "poison_top1": 2,
+        "expected_bad_answer_present": 1,
+        "marker_present": 0,
+        "answer_correct": 0,
+        "degraded_from_clean_correct": 0
+      }
+    }
+  },
+  "post_generation_defense": {
+    "summary": {
+      "num_queries": 181,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "expected_bad_answer_rate": 0.0,
+      "post_generation_answer_accuracy": 1.0,
+      "degraded_from_clean_correct_rate": 0.0,
+      "eligible_clean_correct_queries": 121,
+      "post_generation_blocks": 62,
+      "post_generation_block_rate": 0.3425414364640884
+    },
+    "by_attack_type_when_retrieved": {
+      "retrieval_targeted": {
+        "total_targeted_retrieved": 18,
+        "poison_top1": 15,
+        "expected_bad_answer_present": 0,
+        "marker_present": 0,
+        "answer_correct": 18,
+        "post_generation_blocks": 16,
+        "degraded_from_clean_correct": 0
+      },
+      "content_manipulation": {
+        "total_targeted_retrieved": 2,
+        "poison_top1": 2,
+        "expected_bad_answer_present": 0,
+        "marker_present": 0,
+        "answer_correct": 2,
+        "post_generation_blocks": 2,
+        "degraded_from_clean_correct": 0
+      },
+      "instruction_injection": {
+        "total_targeted_retrieved": 4,
+        "poison_top1": 2,
+        "expected_bad_answer_present": 0,
+        "marker_present": 0,
+        "answer_correct": 4,
+        "post_generation_blocks": 4,
+        "degraded_from_clean_correct": 0
+      }
+    }
+  },
+  "human_in_loop": {
+    "file": "human_in_loop_results.json",
+    "num_queries": 181,
+    "answer_accuracy": 1.0,
+    "poison_retrieval_rate": 0.13259668508287292,
+    "poison_top1_rate": 0.10497237569060773,
+    "attack_success_rate_expected_bad_answer": 0.0,
+    "marker_leakage_rate": 0.0,
+    "degraded_from_clean_correct_rate": 0.0,
+    "original_summary": {
+      "num_queries": 181,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "marker_leakage_rate": 0.0,
+      "expected_bad_answer_rate": 0.0,
+      "human_in_loop_answer_accuracy": 1.0,
+      "degraded_from_clean_correct_rate": 0.0,
+      "eligible_clean_correct_queries": 121,
+      "human_review_count": 91,
+      "human_review_rate": 0.5027624309392266,
+      "human_corrected_count": 91,
+      "human_corrected_rate": 0.5027624309392266
+    }
+  },
+  "manual_human_review": {
+    "file": "manual_human_review_results.json",
+    "num_queries": 181,
+    "answer_accuracy": 0.7845303867403315,
+    "poison_retrieval_rate": 0.13259668508287292,
+    "poison_top1_rate": 0.10497237569060773,
+    "attack_success_rate_expected_bad_answer": 0.011049723756906077,
+    "marker_leakage_rate": 0.0,
+    "degraded_from_clean_correct_rate": 0.011049723756906077,
+    "original_summary": {
+      "num_queries": 181,
+      "poison_retrieval_rate": 0.13259668508287292,
+      "poison_top1_rate": 0.10497237569060773,
+      "expected_bad_answer_rate": 0.011049723756906077,
+      "marker_leakage_rate": 0.0,
+      "human_review_answer_accuracy": 0.7845303867403315,
+      "degraded_from_clean_correct_rate": 0.01652892561983471,
+      "eligible_clean_correct_queries": 121,
+      "review_required_count": 38,
+      "review_required_rate": 0.20994475138121546,
+      "manual_reviewed_count": 25,
+      "manual_reviewed_rate": 0.13812154696132597,
+      "approved_count": 1,
+      "approved_rate_among_reviewed": 0.04,
+      "corrected_count": 21,
+      "corrected_rate_among_reviewed": 0.84,
+      "rejected_count": 3,
+      "rejected_rate_among_reviewed": 0.12
+    }
+  },
+  "interpretation": {
+    "attack_success_rate_expected_bad_answer": "How often the model repeated the attacker's intended wrong answer.",
+    "poison_retrieval_rate": "How often poisoned documents appeared in retrieved context.",
+    "poison_top1_rate": "How often poisoned document was ranked first.",
+    "marker_leakage_rate": "How often FLAG/poison marker leaked into the answer.",
+    "answer_accuracy": "Correctness against gold answer.",
+    "degraded_from_clean_correct_rate": "How often a query that was correct in clean baseline became wrong after attack or defense.",
+    "corpus_defense": "Blocks poisoned documents before indexing.",
+    "context_sanitization": "Allows retrieval but removes suspicious text before generation.",
+    "post_generation_defense": "Checks generated answer after generation and blocks/corrects suspicious outputs."
+  }
+}
