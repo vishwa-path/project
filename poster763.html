@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CS763 – Evaluating Poisoning Attacks & Defenses in RAG Systems</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --red:#e8192c; --orange:#f97316; --teal:#0d9488;
+  --blue:#2563eb; --purple:#7c3aed; --green:#16a34a; --yellow:#ca8a04;
+  --border:#e2e8f0; --text:#0f172a; --muted:#64748b; --faint:#f1f5f9;
+}
+
+html,body{
+  width:100%; background:#fff;
+  font-family:'IBM Plex Sans',sans-serif;
+  color:var(--text);
+}
+
+body{ padding:11px 13px 9px; }
+.poster{ width:100%; }
+
+/* ── HEADER ── */
+.hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:7px;gap:10px;flex-shrink:0;}
+.hdr-l{flex:1;}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:7px;font-weight:700;
+  letter-spacing:.9px;text-transform:uppercase;background:var(--red);color:#fff;
+  padding:2px 6px;border-radius:2px;margin-bottom:3px;}
+h1{font-size:21px;font-weight:800;line-height:1.1;color:var(--text);}
+h1 .acc{color:var(--red);}
+.authors{font-size:7.5px;color:var(--muted);margin-top:2px;}
+.hdr-r{display:flex;flex-direction:column;gap:2px;align-items:flex-end;flex-shrink:0;}
+.pill{display:flex;align-items:center;gap:4px;font-size:7px;color:var(--muted);
+  border:1px solid var(--border);border-radius:20px;padding:2px 8px;white-space:nowrap;background:var(--faint);}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+
+/* ── STATS BAR ── */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);
+  border:1.5px solid var(--border);border-radius:6px;overflow:hidden;
+  margin-bottom:8px;flex-shrink:0;}
+.sc{padding:6px 8px;text-align:center;border-right:1px solid var(--border);}
+.sc:last-child{border-right:none;}
+.snum{font-size:26px;font-weight:800;line-height:1;display:block;margin-bottom:1px;}
+.slbl{font-size:6.5px;font-weight:600;letter-spacing:.6px;color:var(--muted);text-transform:uppercase;}
+
+/* ── MAIN GRID: fr units, cols 1&4 wider than 2&3, space-between ── */
+.grid{
+  display:grid;
+  grid-template-columns:1.15fr 1fr 1fr 1.05fr;
+  gap:8px;
+  align-items:start;
+}
+
+/* Each col: flex column, space-between so cards spread top to bottom evenly */
+.col{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:8px;
+}
+
+/* ── CARD ── */
+.card{
+  border:1.5px solid var(--border);border-radius:6px;padding:8px;background:#fff;
+  display:flex;flex-direction:column;
+}
+
+/* Section title */
+.st{display:flex;align-items:center;gap:5px;
+  font-size:7.8px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
+  margin-bottom:6px;flex-shrink:0;}
+.sn2{width:15px;height:15px;border-radius:3px;background:var(--red);color:#fff;
+  font-size:7px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.n04{background:var(--orange)}.n05{background:var(--green)}.n06{background:var(--yellow)}
+.n07{background:var(--red)}.n08{background:var(--purple)}.n09{background:var(--teal)}
+.n10{background:var(--blue)}.n11{background:var(--purple)}.n12{background:var(--teal)}
+
+/* inline subtitle */
+.stsub{font-size:7px;color:var(--muted);margin-left:auto;font-weight:500;}
+.strow-hd{display:flex;align-items:center;gap:5px;margin-bottom:6px;flex-wrap:wrap;flex-shrink:0;}
+
+/* ── TYPOGRAPHY ── */
+.ptxt{font-size:8.4px;line-height:1.42;margin-bottom:5px;}
+.rlink{color:var(--red);font-weight:600;}
+.blink{color:var(--blue);font-weight:600;}
+.rqs{list-style:disc;padding-left:11px;margin:3px 0 4px;}
+.rqs li{font-size:8.2px;line-height:1.4;margin-bottom:3px;}
+.motiv{font-size:8.2px;line-height:1.42;margin-top:3px;}
+.motiv strong{color:var(--orange);}
+
+/* arch flow */
+.aflw{display:flex;align-items:center;gap:3px;flex-wrap:wrap;margin-bottom:5px;}
+.abox{border:1px solid var(--border);border-radius:3px;padding:3px 5px;
+  font-size:7.5px;font-weight:600;background:var(--faint);}
+.abox.rb{background:#fee2e2;border-color:#fca5a5;color:var(--red);}
+.abox.bb{background:#dbeafe;border-color:#93c5fd;color:var(--blue);}
+.aarr{font-size:8px;color:var(--muted);}
+.adtl{font-size:7.8px;color:var(--muted);margin-bottom:4px;line-height:1.38;}
+.adtl strong{color:var(--text);}
+
+/* attack cards */
+.atgrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.atcard{border-radius:4px;padding:7px 6px;font-size:8px;line-height:1.4;}
+.atcard h4{font-size:8px;font-weight:700;margin-bottom:3px;}
+.ai{background:#fff7ed;border:1px solid #fed7aa;} .ai h4{color:#c2410c;}
+.ar{background:#fef2f2;border:1px solid #fecaca;} .ar h4{color:var(--red);}
+.ac{background:#f0fdf4;border:1px solid #bbf7d0;} .ac h4{color:#166534;}
+.as{background:#fdf4ff;border:1px solid #e9d5ff;} .as h4{color:#6b21a8;}
+
+/* ── TABLES ── */
+.rt{width:100%;border-collapse:collapse;}
+.rt th{font-size:7px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;
+  color:var(--muted);padding:3px 4px;border-bottom:1.5px solid var(--border);text-align:right;}
+.rt th:first-child{text-align:left;}
+.rt td{font-size:8px;padding:3px 4px;border-bottom:1px solid var(--faint);text-align:right;}
+.rt td:first-child{text-align:left;color:var(--muted);}
+.vb{color:var(--text);font-weight:500;}
+.vr{color:var(--red);font-weight:700;}
+.vg{color:var(--green);font-weight:700;}
+.vo{color:var(--orange);font-weight:600;}
+.vm{color:var(--muted);}
+.hr1 td{background:#f0fdf4;}
+.hr2 td{background:#eff6ff;}
+
+.rnote{font-size:7.8px;color:var(--muted);margin-top:5px;padding-top:4px;
+  border-top:1px solid var(--border);line-height:1.42;flex-shrink:0;}
+.rnote strong{color:var(--text);}
+.rnote .rr{color:var(--red);font-weight:700;}
+
+/* ── BARS ── */
+.brow{display:flex;align-items:center;gap:5px;margin-bottom:5px;}
+.brow:last-of-type{margin-bottom:0;}
+.blbl{font-size:7.8px;width:148px;flex-shrink:0;line-height:1.3;color:var(--text);}
+.btrk{flex:1;height:10px;background:var(--faint);border-radius:2px;}
+.bfil{height:100%;border-radius:2px;}
+.bval{font-size:7.8px;font-weight:700;width:54px;text-align:right;flex-shrink:0;}
+
+/* ── SCALE COMPARISON ── */
+.scols{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.schead{font-size:7.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+  padding:3px 5px;border-radius:3px;margin-bottom:4px;text-align:center;}
+.preh{background:#dbeafe;color:var(--blue);}
+.posth{background:#fee2e2;color:var(--red);}
+.srow{display:flex;justify-content:space-between;font-size:7.8px;padding:2px 0;
+  border-bottom:1px solid var(--faint);}
+.srow .sl2{color:var(--muted);}
+.srow .sv{font-weight:700;}
+.sv.bad{color:var(--red)}.sv.ok{color:var(--green)}
+.scnote{font-size:7.8px;color:var(--muted);margin-top:5px;line-height:1.4;font-style:italic;}
+
+/* ── KEY INSIGHTS ── */
+.ii{display:flex;gap:6px;padding:5px 0;border-bottom:1px solid var(--border);}
+.ii:first-of-type{padding-top:0;}
+.ii:last-child{border-bottom:none;padding-bottom:0;}
+.iico{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:8px;flex-shrink:0;margin-top:1px;}
+.i-r{background:#fee2e2;color:var(--red);}
+.i-t{background:#ccfbf1;color:#0f766e;}
+.i-b{background:#dbeafe;color:var(--blue);}
+.i-p{background:#ede9fe;color:var(--purple);}
+.i-o{background:#fff7ed;color:var(--orange);}
+.itxt{font-size:8px;line-height:1.4;}
+.itxt strong{font-weight:700;color:var(--text);}
+
+/* ── DEF STACK ── */
+.dsi{display:flex;gap:6px;padding:5px 0;align-items:flex-start;border-bottom:1px solid var(--border);}
+.dsi:first-of-type{padding-top:0;}
+.dsi:last-of-type{border-bottom:none;padding-bottom:0;}
+.dsnum{width:15px;height:15px;border-radius:50%;background:var(--teal);color:#fff;
+  font-size:7.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.dsnum.d2{background:var(--blue)}.dsnum.d3{background:var(--orange)}
+.dstxt{font-size:8px;line-height:1.4;}
+.dstxt strong{display:block;font-weight:700;margin-bottom:1px;}
+.dstxt .t1{color:var(--teal)}.dstxt .t2{color:var(--blue)}.dstxt .t3{color:var(--orange)}
+.dsnote{font-size:7.8px;color:var(--muted);margin-top:5px;line-height:1.4;font-style:italic;
+  border-top:1px solid var(--border);padding-top:5px;}
+
+/* ── FOOTER ── */
+.footer{font-size:6.8px;color:var(--muted);text-align:center;
+  margin-top:7px;padding-top:5px;border-top:1px solid var(--border);flex-shrink:0;}
+</style>
+</head>
+<body>
+<div class="poster">
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-l">
+    <div class="badge">CS763 · Project Report</div>
+    <h1>Evaluating Poisoning <span class="acc">Attacks &amp; Defenses</span> in RAG Systems</h1>
+    <div class="authors">Shruthi Gopalakrishnan &nbsp;·&nbsp; Viswanath Pathmanaban</div>
+  </div>
+  <div class="hdr-r">
+    <div class="pill"><div class="dot" style="background:var(--green)"></div>Synthetic Enterprise Corpus</div>
+    <div class="pill"><div class="dot" style="background:var(--blue)"></div>FAISS + flan-t5-base Pipeline</div>
+    <div class="pill"><div class="dot" style="background:var(--red)"></div>4 Attack Types · 5 Defenses</div>
+    <div class="pill"><div class="dot" style="background:var(--orange)"></div>Pre &amp; Post Scaling Evaluation</div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats">
+  <div class="sc"><span class="snum" style="color:var(--red)">80%</span><div class="slbl">Poison Retrieval Rate at Scale</div></div>
+  <div class="sc"><span class="snum" style="color:var(--orange)">82%</span><div class="slbl">Broad Attack Success (Post-Scale)</div></div>
+  <div class="sc"><span class="snum" style="color:var(--teal)">95.8%</span><div class="slbl">Accuracy with Post-Gen Defense</div></div>
+  <div class="sc"><span class="snum" style="color:var(--green)">6×</span><div class="slbl">Increase in Poison Retrieval on Scaling</div></div>
+  <div class="sc"><span class="snum" style="color:var(--blue)">1500</span><div class="slbl">Corpus: 500 Clean + 1000 Poisoned Docs</div></div>
+  <div class="sc"><span class="snum" style="color:var(--purple)">0%</span><div class="slbl">Majority Voting Accuracy at Scale</div></div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="grid">
+
+<!-- ══ COL 1 ══ -->
+<div class="col">
+
+  <!-- 01 Problem Statement -->
+  <div class="card">
+    <div class="st"><div class="sn2">01</div> Problem Statement</div>
+    <p class="ptxt">RAG systems are vulnerable to <span class="rlink">corpus poisoning attacks</span> where adversaries inject malicious documents into the knowledge base. Unlike prompt injections, these bypass direct model interaction by exploiting the retrieval mechanism.</p>
+    <p style="font-size:8px;font-weight:600;margin-bottom:3px;">Key research questions:</p>
+    <ul class="rqs">
+      <li>How much can adversaries manipulate outputs by corrupting the corpus?</li>
+      <li>How do we attribute outputs to retrieved context vs. parametric knowledge?</li>
+      <li>Which defenses best balance <span class="rlink">robustness</span> and <span class="blink">utility</span>?</li>
+    </ul>
+    <p class="motiv"><strong>Motivation:</strong> Even a single poisoned passage among top-k results can override correct knowledge — a critical fragility in enterprise knowledge management and decision-support systems.</p>
+  </div>
+
+  <!-- 02 System Architecture -->
+  <div class="card">
+    <div class="st"><div class="sn2">02</div> System Architecture</div>
+    <div class="aflw">
+      <div class="abox rb">Query<br>Embed</div><div class="aarr">→</div>
+      <div class="abox">FAISS<br>Index</div><div class="aarr">→</div>
+      <div class="abox">Top-k<br>Retr.</div><div class="aarr">→</div>
+      <div class="abox">Context<br>Assem.</div><div class="aarr">→</div>
+      <div class="abox bb">flan-t5<br>Gen.</div>
+    </div>
+    <div class="adtl"><strong>Embed:</strong> all-MiniLM-L6-v2, L2-norm, cosine via inner product &nbsp;·&nbsp; <strong>Gen:</strong> flan-t5-base, context-only, 128 token cap</div>
+    <p class="ptxt"><strong>Dataset:</strong> Fully synthetic enterprise corpus (service docs, APIs, deployments, monitoring, policies). Queries derived from facts — guarantees deterministic ground truth, eliminating pretrained knowledge contamination.</p>
+  </div>
+
+  <!-- 03 Attack Strategies -->
+  <div class="card">
+    <div class="st"><div class="sn2">03</div> 4 Attack Strategies</div>
+    <div class="atgrid">
+      <div class="atcard ai"><h4>⚡ Instruction Injection</h4>Embeds "ignore previous instructions" directives. Exploits instruction-following behavior of LLMs.</div>
+      <div class="atcard ar"><h4>🎯 Retrieval-Targeted</h4>Keyword flooding + authentic structure mimicry to rank top-k. Most effective at pre-scale.</div>
+      <div class="atcard ac"><h4>📄 Content Manipulation</h4>Incorrect facts, plausible formatting. High retrieval but 0% ASR — lacks semantic influence.</div>
+      <div class="atcard as"><h4>🎭 Semantic Poisoning</h4>Mimics legitimate updates with wrong facts. No explicit instructions. Hardest to detect. Scale-only.</div>
+    </div>
+  </div>
+
+</div><!-- end col1 -->
+
+<!-- ══ COL 2: Pre-Scale ══ -->
+<div class="col">
+
+  <!-- 04 Pre-Scale Results -->
+  <div class="card">
+    <div class="strow-hd">
+      <div class="sn2 n04">04</div>
+      <span style="font-size:7.8px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;">Pre-Scale Results</span>
+      <span class="stsub">52 Clean · 72 Poison · 181 Queries</span>
+    </div>
+    <table class="rt">
+      <thead><tr><th style="width:52%"></th><th>Baseline</th><th>Poisoned</th></tr></thead>
+      <tbody>
+        <tr><td>Accuracy</td><td class="vb">66.85%</td><td class="vb">66.85%</td></tr>
+        <tr><td>Retrieval Hit Rate</td><td class="vg">95.58%</td><td class="vg">95.58%</td></tr>
+        <tr><td>Poison Retrieval Rate</td><td class="vg">0%</td><td class="vr">13.26%</td></tr>
+        <tr><td>Poison Top-1 Rate</td><td class="vg">0%</td><td class="vr">10.50%</td></tr>
+        <tr><td>Attack Success Rate (ASR)</td><td class="vg">0%</td><td class="vr">2.76%</td></tr>
+        <tr><td>Marker Leakage</td><td class="vg">0%</td><td class="vg">0%</td></tr>
+      </tbody>
+    </table>
+    <div class="rnote">Key finding: <span class="rr">Retrieval-targeted attacks</span> were most harmful — <strong>83% top-1 rate</strong> and 22% ASR, with accuracy dropping 33pp when triggered. Content manipulation achieved 100% retrieval but 0% ASR — lacks semantic influence on generation.</div>
+  </div>
+
+  <!-- 05 Pre-Scale Defense Performance -->
+  <div class="card">
+    <div class="st"><div class="sn2 n05">05</div> Pre-Scale Defense Performance</div>
+    <table class="rt">
+      <thead><tr><th>Defense</th><th>Accuracy</th><th>ASR</th><th>Poison Ret.</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--muted);font-weight:400;">None</td><td>66.85%</td><td class="vr">2.76%</td><td class="vr">13.26%</td></tr>
+        <tr class="hr1"><td>Corpus Filter</td><td class="vg">77.90%</td><td class="vg">0%</td><td class="vg">0%</td></tr>
+        <tr><td>Context Sanitize</td><td>70.17%</td><td>2.21%</td><td class="vr">13.26%</td></tr>
+        <tr class="hr2"><td>Post-Generation ✦</td><td style="color:var(--blue);font-weight:700;">100%</td><td class="vg">0%</td><td class="vr">13.26%</td></tr>
+        <tr><td>Human Loop (50%)</td><td style="color:var(--blue);font-weight:700;">100%</td><td class="vg">0%</td><td class="vm">—</td></tr>
+      </tbody>
+    </table>
+    <div class="rnote">Corpus filtering is the strongest automated defense (zero retrieval, +11pp acc). Post-generation validation achieves 100% accuracy by blocking ~34% of responses. Context sanitization insufficient alone.</div>
+  </div>
+
+  <!-- 06 Pre-Scale Attack Breakdown -->
+  <div class="card">
+    <div class="st"><div class="sn2 n06">06</div> Pre-Scale Attack Breakdown</div>
+    <div class="brow"><div class="blbl">Retrieval-Targeted (ASR 22.2%)</div><div class="btrk"><div class="bfil" style="width:83%;background:#e8192c"></div></div><div class="bval" style="color:#e8192c">83% Top-1</div></div>
+    <div class="brow"><div class="blbl">Instruction Injection (ASR 25%)</div><div class="btrk"><div class="bfil" style="width:50%;background:#2563eb"></div></div><div class="bval" style="color:#2563eb">50% Top-1</div></div>
+    <div class="brow"><div class="blbl">Content Manipulation (ASR 0%)</div><div class="btrk"><div class="bfil" style="width:100%;background:#7c3aed"></div></div><div class="bval" style="color:#7c3aed">100% Retrieved</div></div>
+    <div class="rnote">Note: Content manipulation achieves perfect retrieval but fails to redirect model outputs — proof that retrieval success ≠ attack success.</div>
+  </div>
+
+</div><!-- end col2 -->
+
+<!-- ══ COL 3: Post-Scale ══ -->
+<div class="col">
+
+  <!-- 07 Post-Scale Results -->
+  <div class="card">
+    <div class="strow-hd">
+      <div class="sn2 n07">07</div>
+      <span style="font-size:7.8px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;">Post-Scale Results</span>
+      <span class="stsub">500 Clean · 1000 Poison · 2300 Queries</span>
+    </div>
+    <table class="rt">
+      <thead><tr><th style="width:52%"></th><th>Baseline</th><th>Poisoned</th></tr></thead>
+      <tbody>
+        <tr><td>Accuracy</td><td class="vb">62.15%</td><td class="vr">60.85%</td></tr>
+        <tr><td>Retrieval Hit Rate</td><td class="vo">57.25%</td><td class="vo">57.25%</td></tr>
+        <tr><td>Poison Retrieval Rate</td><td class="vr">80.05%</td><td class="vr">80.05%</td></tr>
+        <tr><td>Poison Top-1 Rate</td><td class="vm">—</td><td class="vr">10%</td></tr>
+        <tr><td>Broad ASR</td><td class="vr">81.26%</td><td class="vr">82.14%</td></tr>
+        <tr><td>Marker Leakage</td><td class="vr">17.85%</td><td class="vr">19%</td></tr>
+      </tbody>
+    </table>
+    <div class="rnote"><span class="rr">Catastrophic degradation:</span> Retrieval hit rate fell 38pp, poison retrieval surged 6× to 80%. Marker leakage — absent pre-scale — appeared at 19%, indicating verbatim copying of adversarial content.</div>
+  </div>
+
+  <!-- 08 Post-Scale Defense Performance -->
+  <div class="card">
+    <div class="st"><div class="sn2 n08">08</div> Post-Scale Defense Performance</div>
+    <table class="rt">
+      <thead><tr><th>Defense</th><th>Accuracy</th><th>Strict ASR</th><th>Broad ASR</th></tr></thead>
+      <tbody>
+        <tr><td style="color:var(--muted);font-weight:400;">None</td><td>60.85%</td><td>4.87%</td><td class="vr">82.14%</td></tr>
+        <tr class="hr1"><td>Corpus Filter</td><td class="vg">57.5%</td><td class="vg">0%</td><td class="vg">0%</td></tr>
+        <tr><td>Context Sanitize</td><td>29.8%</td><td>3.75%</td><td class="vr">75.57%</td></tr>
+        <tr class="hr2"><td>Post-Generation ✦</td><td style="color:var(--blue);font-weight:700;">95.8%</td><td class="vg">0.5%</td><td class="vg">5.2%</td></tr>
+        <tr><td>Majority Voting</td><td class="vr">0%</td><td class="vm">—</td><td class="vr">100%</td></tr>
+      </tbody>
+    </table>
+    <div class="rnote">Post-generation validation is dominant runtime defense (95.8% acc, 0.5% strict ASR) but blocks ~<strong>71%</strong> of responses. Majority voting collapses completely — aggregation amplifies corruption.</div>
+  </div>
+
+  <!-- 09 Post-Scale Attack Breakdown -->
+  <div class="card">
+    <div class="st"><div class="sn2 n09">09</div> Post-Scale Attack Breakdown</div>
+    <div class="brow"><div class="blbl">Semantic Poison — Broad ASR</div><div class="btrk"><div class="bfil" style="width:93.1%;background:#7c3aed"></div></div><div class="bval" style="color:#7c3aed">93.1%</div></div>
+    <div class="brow"><div class="blbl">Retrieval-Targeted — Broad ASR</div><div class="btrk"><div class="bfil" style="width:88.4%;background:#f97316"></div></div><div class="bval" style="color:#f97316">88.4%</div></div>
+    <div class="brow"><div class="blbl">Instruction Injection — Broad ASR</div><div class="btrk"><div class="bfil" style="width:100%;background:#e8192c"></div></div><div class="bval" style="color:#e8192c">100%</div></div>
+    <div class="brow"><div class="blbl">Semantic Poison — Marker Leakage</div><div class="btrk"><div class="bfil" style="width:4.1%;background:#16a34a"></div></div><div class="bval" style="color:#16a34a">Only 4.1%</div></div>
+    <div class="rnote">Semantic poisoning: nearly undetectable (4.1% marker leakage) yet achieves 93.1% broad ASR and destroys accuracy to 6.8% — the most dangerous attack vector.</div>
+  </div>
+
+</div><!-- end col3 -->
+
+<!-- ══ COL 4 ══ -->
+<div class="col">
+
+  <!-- 10 Scale Comparison -->
+  <div class="card">
+    <div class="st"><div class="sn2 n10">10</div> Scale Comparison</div>
+    <div class="scols">
+      <div>
+        <div class="schead preh">Pre-Scale</div>
+        <div class="srow"><span class="sl2">Accuracy</span><span class="sv ok">66.85%</span></div>
+        <div class="srow"><span class="sl2">Poison Ret.</span><span class="sv ok">13.26%</span></div>
+        <div class="srow"><span class="sl2">Broad ASR</span><span class="sv ok">Low</span></div>
+        <div class="srow"><span class="sl2">Retr. Quality</span><span class="sv ok">95.5%</span></div>
+      </div>
+      <div>
+        <div class="schead posth">Post-Scale</div>
+        <div class="srow"><span class="sl2">Accuracy</span><span class="sv bad">60.85%</span></div>
+        <div class="srow"><span class="sl2">Poison Ret.</span><span class="sv bad">80.05%</span></div>
+        <div class="srow"><span class="sl2">Broad ASR</span><span class="sv bad">82%</span></div>
+        <div class="srow"><span class="sl2">Retr. Quality</span><span class="sv bad">57.25%</span></div>
+      </div>
+    </div>
+    <div class="scnote">RAG systems degrade non-linearly — retrieval corruption and accuracy loss compound each other at scale.</div>
+  </div>
+
+  <!-- 11 Key Insights -->
+  <div class="card">
+    <div class="st"><div class="sn2 n11">11</div> Key Insights</div>
+    <div class="ii">
+      <div class="iico i-r">▲</div>
+      <div class="itxt"><strong>Retrieval is the primary failure point.</strong> As dataset grows, poisoned docs are retrieved more frequently, overwhelming generation-stage defenses.</div>
+    </div>
+    <div class="ii">
+      <div class="iico i-o">⚡</div>
+      <div class="itxt"><strong>Lightweight defenses don't scale.</strong> Context sanitization fails at high adversarial density — pattern matching is insufficient against semantic attacks.</div>
+    </div>
+    <div class="ii">
+      <div class="iico i-b">🛡</div>
+      <div class="itxt"><strong>Strong defenses trade usability.</strong> Post-generation validation works (95.8% acc) but blocks 71% of responses at scale.</div>
+    </div>
+    <div class="ii">
+      <div class="iico i-p">✗</div>
+      <div class="itxt"><strong>Ensemble methods fail under bias.</strong> Majority voting collapses to 0% when all retrieved evidence is systematically corrupted.</div>
+    </div>
+    <div class="ii">
+      <div class="iico i-t">👁</div>
+      <div class="itxt"><strong>Semantic poisoning: the silent threat.</strong> Only 4.1% marker leakage yet 93.1% broad ASR — evades output-inspection defenses entirely.</div>
+    </div>
+  </div>
+
+  <!-- 12 Recommended Defense Stack -->
+  <div class="card">
+    <div class="st"><div class="sn2 n12">12</div> Recommended Defense Stack</div>
+    <div class="dsi">
+      <div class="dsnum">1</div>
+      <div class="dstxt"><strong class="t1">Corpus-Level Filtering</strong>Remove adversarial docs at ingestion. Eliminates retrieval corruption at source.</div>
+    </div>
+    <div class="dsi">
+      <div class="dsnum d2">2</div>
+      <div class="dstxt"><strong class="t2">Context Sanitization</strong>Strip residual adversarial patterns post-retrieval. Reduces remaining exposure.</div>
+    </div>
+    <div class="dsi">
+      <div class="dsnum d3">3</div>
+      <div class="dstxt"><strong class="t3">Post-Generation Validation</strong>Final correctness guarantee. High block rate (71%) — open usability challenge.</div>
+    </div>
+    <div class="dsnote">Single-layer defenses are insufficient. A layered architecture combining all three stages is required for production RAG security.</div>
+  </div>
+
+</div><!-- end col4 -->
+
+</div><!-- end grid -->
+
+</div><!-- end poster -->
+</body>
+</html>
